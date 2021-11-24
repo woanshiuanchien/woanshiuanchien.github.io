@@ -12,7 +12,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Crimson Pro", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.8;
@@ -50,7 +50,7 @@ figure {
     margin: 20px auto 0px auto;
     color: #b3b3b3;
     font-style: italic;
-    font-family: "Quicksand", Arial, sans-serif; }
+    font-family: "Crimson Pro", serif; }
     @media screen and (max-width: 480px) {
       figure figcaption {
         width: 100%; } }
@@ -144,7 +144,7 @@ figure {
           text-decoration: none;
           position: relative;
           padding: 10px 0;
-          font-family: "Quicksand", Arial, sans-serif;
+          font-family: "Crimson Pro", serif;
           -webkit-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
@@ -308,7 +308,7 @@ figure {
           line-height: 1.5;
           margin-bottom: 30px;
           font-weight: 300;
-          font-family: "Quicksand", Arial, sans-serif; }
+          font-family: "Crimson Pro", serif; }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 a {
             color: rgba(44, 152, 240, 0.8);
             border-bottom: 1px solid rgba(44, 152, 240, 0.7); }
@@ -460,7 +460,7 @@ body.offcanvas {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Crimson Pro", serif;
   background-color: #2F66CC;
   color: #fff;
   position: relative;
@@ -599,7 +599,7 @@ body.offcanvas {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
   font-size: 20px;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Crimson Pro", serif;
   font-weight: 500; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
@@ -629,7 +629,7 @@ body.offcanvas {
       font-size: 30px;
       color: #2F66CC; }
   .services h3 {
-    font-family: "Quicksand", Arial, sans-serif;
+    font-family: "Crimson Pro", serif;
     font-size: 16px;
     font-weight: 500; }
   .services.color-2 {
@@ -647,7 +647,7 @@ body.offcanvas {
   .services.color-5 {
     border-bottom: 2px solid #2fa499; }
   .services.color-6 {
-    border-bottom: 2px solid #4054b2; }
+    border-bottom: 2px solid #998773; }
 
 .services {
   margin-bottom: 80px;
@@ -722,15 +722,15 @@ body.offcanvas {
     .services.color-5 .icon:after {
       border-color: #2fa499 transparent transparent transparent; }
   .services.color-6 .icon {
-    background: #4054b2; }
+    background: #998773; }
     .services.color-6 .icon:before {
-      border-color: transparent transparent #4054b2 transparent; }
+      border-color: transparent transparent #998773 transparent; }
     .services.color-6 .icon:after {
-      border-color: #4054b2 transparent transparent transparent; }
+      border-color: #998773 transparent transparent transparent; }
 
 .progress-wrap h3 {
   font-size: 16px;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Crimson Pro", serif;
   margin-bottom: 10px; }
 
 .progress {
@@ -802,11 +802,11 @@ body.offcanvas {
     .progress-bar.color-5 span {
       color: #2fa499; }
   .progress-bar.color-6 {
-    background: #4054b2; }
+    background: #998773; }
     .progress-bar.color-6:after {
-      background: #4054b2; }
+      background: #998773; }
     .progress-bar.color-6 span {
-      color: #4054b2; }
+      color: #998773; }
 
 .colorlib-feature {
   text-align: left;
@@ -891,7 +891,7 @@ body.offcanvas {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: "Quicksand", Arial, sans-serif; }
+    font-family: "Crimson Pro", serif; }
     .blog-entry .desc h3 a {
       color: #000;
       text-decoration: none; }
@@ -971,7 +971,7 @@ body.offcanvas {
           font-size: 16px;
           color: #333333; }
     .project .desc h3 {
-      font-family: "Quicksand", Arial, sans-serif;
+      font-family: "Crimson Pro", serif;
       font-size: 16px;
       font-weight: 500;
       text-transform: uppercase;
@@ -1067,7 +1067,7 @@ body.offcanvas {
     font-size: 40px;
     display: block;
     color: white;
-    font-family: "Quicksand", Arial, sans-serif;
+    font-family: "Literata", serif;
     width: 100%;
     font-weight: 700;
     margin-bottom: .3em; }
@@ -1160,7 +1160,7 @@ body.offcanvas {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Literata", serif;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
