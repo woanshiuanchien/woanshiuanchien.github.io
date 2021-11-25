@@ -405,7 +405,7 @@ body.offcanvas {
 
 .colorlib-heading {
   font-size: 18px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1430,6 +1430,8 @@ body.offcanvas {
 
 
 
+
+
 .badge {
     display: inline-block;
     min-width: 20px;
@@ -1444,3 +1446,5 @@ body.offcanvas {
     background-color: #FFB333;
     border-radius: 5px;
 }
+
+
