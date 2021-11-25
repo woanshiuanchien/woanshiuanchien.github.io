@@ -575,7 +575,7 @@ body.offcanvas {
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
   background: #f2f3f7;
-  padding: 1.5em;
+  padding: 0.6em;
   margin-left: 60px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
