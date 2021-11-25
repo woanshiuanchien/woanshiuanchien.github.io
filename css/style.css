@@ -1427,3 +1427,20 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+
+
+.badge {
+    display: inline-block;
+    min-width: 20px;
+    padding: 3px 7px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #FFB333;
+    border-radius: 5px;
+}
