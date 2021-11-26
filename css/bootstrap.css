@@ -531,6 +531,14 @@ small,
   font-size: 85%;
 }
 
+small-caps,
+.small-caps {
+  font-variant-caps: small-caps;
+  font-weight: bold;
+  color: #3A3A3A;
+}
+
+
 mark,
 .mark {
   background-color: #fcf8e3;
@@ -2590,10 +2598,10 @@ select[multiple].input-lg,
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 1px solid transparent;
+  border: 2px solid #FFFF;
   white-space: nowrap;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.42857;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -6253,5 +6261,8 @@ button.close {
     display: none !important;
   }
 }
+
+
+
 
 /*# sourceMappingURL=bootstrap.css.map */
