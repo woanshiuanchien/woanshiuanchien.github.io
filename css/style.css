@@ -652,7 +652,7 @@ body.offcanvas {
     .services.color-2 .icon2 i {
       color: #976666; }
   .services.color-3 {
-    border-bottom: 2px solid #c09d9b; } /*#FAB950*/
+    border-bottom: 2px solid #c09d9b; } /*#FCDBA6*/
     .services.color-3 .icon2 i {
       color: #c09d9b; }
   .services.color-4 {
@@ -1459,7 +1459,7 @@ body.offcanvas {
     vertical-align: middle;
     white-space: nowrap;
     text-align: center;
-    background-color: #FAB950;
+    background-color: #FCDBA6;
     border-radius: 5px;
 }
 
