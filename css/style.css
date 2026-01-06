@@ -30,6 +30,21 @@ a {
     outline: none;
     text-decoration: none !important; }
 
+a.a2,
+a.a2:visited {
+  color: black;
+  transition: 0.5s;
+  border-bottom: dotted 1px;
+  text-decoration: none;
+}
+a.a2:hover,
+a.a2:active,
+a.a2:focus {
+  color: #7A5A83;
+  outline: none;
+  text-decoration: none !important;
+}
+
 p {
   margin-bottom: 0.3em; }
 
