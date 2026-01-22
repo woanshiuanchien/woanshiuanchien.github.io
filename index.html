@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!DOCTYPE HTML>
 <html>
 <head>
   <meta charset="utf-8">
@@ -28,6 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/animate.css">
@@ -67,25 +67,28 @@
         <nav id="colorlib-main-menu" role="navigation" class="navbar">
           <div id="navbar" class="collapse">
             <ul>
-              <li class="active"><a href="#" data-nav-section="home">Home</a></li>
               <li><a href="#" data-nav-section="about">About Me</a></li>
               <li><a href="#" data-nav-section="LatestNews">Latest News</a></li>
-              <li><a href="#" data-nav-section="experience">Experience</a></li>
-              <li><a href="#" data-nav-section="publication">Publication</a></li>
+			  <li><a href="pages/experience.html" class="external">Experience</a></li>
+              <li><a href="pages/publication.html" class="external">Publication</a></li>
+			  <li><a href="#" data-nav-section="Contact">Contact</a></li>
             </ul>
           </div>
         </nav>
 
         <nav id="colorlib-main-menu" style="padding-bottom: 20%">
-          <div class="collapse">
-            <ul>
-              <li><a href="cv/Woan-Shiuan Chien_CV_20260106.pdf" target="_blank" rel="noopener">CV</a></li>
-              <li><a href="https://scholar.google.com/citations?user=udbwr2sAAAAJ&hl=zh-TW&authuser=1" target="_blank" rel="noopener">Google Scholar</a></li>
-              <li><a href="https://www.linkedin.com/in/woan-shiuan-chien-3ab8641ba/" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="https://github.com/woanshiuanchien" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="mailto:wschien@gapp.nthu.edu.tw">Contact</a></li>
-            </ul>
-          </div>
+		  <div class="colorlib-footer">
+          <p>
+			  <ul>
+				<li><a href="https://scholar.google.com.tw/citations?user=udbwr2sAAAAJ&hl=zh-TW&authuser=1" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+				<li><a href="https://orcid.org/my-orcid?orcid=0000-0003-2235-4080" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>
+				<li><a href="https://www.scopus.com/authid/detail.uri?authorId=57203713867" target="_blank"><i class="fa-solid fa-book"></i></a></li>
+				<li><a href="https://github.com/woanshiuanchien" target="_blank" rel="noopener"><i class="icon-github"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/woan-shiuan-chien-3ab8641ba/"><i class="icon-linkedin2"></i></a></li>
+			  </ul>
+          </p>
+          
+        </div>
         </nav>
 
         <div class="colorlib-footer">
@@ -97,12 +100,7 @@
               <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>
             </small>
           </p>
-          <ul>
-            <li><a href="#"><i class="icon-facebook2"></i></a></li>
-            <li><a href="#"><i class="icon-twitter2"></i></a></li>
-            <li><a href="#"><i class="icon-instagram"></i></a></li>
-            <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-          </ul>
+          
         </div>
       </aside>
 
@@ -208,7 +206,7 @@
         </section>
 
         <!-- ===== ABOUT ===== -->
-        <section class="colorlib-about" data-section="about">
+        <section class="colorlib-about" data-section="about" id="about">
           <div class="colorlib-narrow-content">
             <div class="row">
               <div class="col-md-12">
@@ -243,7 +241,7 @@
                           I warmly welcome you to reach out!! Don't hesitate to <a href="mailto:wschien@gapp.nthu.edu.tw">email</a> me directly with your CV and transcripts.
                         </strong>
                       </span>
-
+					  
                       <p>
                         My research interest primarily revolves around human-centered analytics, affective computing, machine learning and multimodal (speech, physiology, gesture) signal processing.
                       </p>
@@ -285,14 +283,17 @@
                     </div>
                   </div>
                 </div>
-
+					<a class="btn-cv-icon" href="cv/Woan-Shiuan Chien_CV.pdf" target="_blank">
+					  <i class="icon-download"></i>
+					  Woan-Shiuan Chien (Winnie)'s CV
+					</a>
               </div>
             </div>
           </div>
         </section>
 
         <!-- ===== LATEST NEWS ===== -->
-        <section class="colorlib-LatestNews" data-section="LatestNews">
+        <section class="colorlib-LatestNews" data-section="LatestNews" id="LatestNews">
           <div class="colorlib-narrow-content">
             <div class="row">
               <div class="col-md-12">
@@ -354,666 +355,58 @@
         </section>
 
 
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading">WORKING EXPERIENCES</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
+        <!-- ===== LATEST NEWS ===== -->
+        <section class="colorlib-Contact" data-section="Contact" id="Contact">
+		  <div class="colorlib-narrow-content">
+			<div class="row">
+			  <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+				<span class="heading-meta">Contact</span>
+			  </div>
+			</div>
 
-							<article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
+			<div class="row">
+			  <!-- Left: contact info -->
+			  <div class="col-md-5 animate-box" data-animate-effect="fadeInLeft">
+				<div class="contact-card">
+				  <p><b>Email</b><br>
+					<a href="mailto:wschien@gapp.nthu.edu.tw">wschien@gapp.nthu.edu.tw</a>
+				  </p>
 
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-briefcase"></i>
-					               </div>
-								   
-									<div class="timeline-label">
-									  <h2><b>Behavioral Information &amp; Interaction Computation Lab, NTHU</b></a> <span>2025.04 - Present</span></h2>
-									  <p class="small-caps">Postdoctoral Researcher working with Professor <a href="https://biic.ee.nthu.edu.tw/biicers.php">Chi-Chun Lee (Jeremy)</a></p>
+				  <p><b>Phone</b><br>
+					<span>+886-3-5712121 ###</span>
+				  </p>
 
-									<div>
-									<p><b>Research in Modeling Emotions in Interactive and Multimodal Contexts</b></p>
-									<ul>
-									  <li>Lead the development of a large-scale multimodal interaction corpus capturing co-speech gestures, full-body motion, and expressive speech during dyadic conversations, in collaboration with experts in acting and behavioral sciences.</li>
-									  <li>Design affective computing frameworks that move beyond static, unimodal processing by modeling dynamic emotion co-regulation, turn-taking cues, and gestural-prosodic synchrony in real-time interactions.</li>
-									</ul>
-									</div><div>
-									<p><b>Research in Trustworthy AI on Emotion Recognition and Healthcare</b></p>
-										<ul>
-										  <li>Advance fairness-aware learning across heterogeneous signals. Design and evaluate fairness-aware models for both speech and physiological signals, tackling demographic imbalance and individual variability.</li>
-										  <li>Mitigate reliability challenges under real-world data constraints and address incomplete or noisy input conditions through adaptive model design.</li>
-										  <li>Investigate how fairness and uncertainty modeling contribute to the trustworthiness of affective systems deployed in sensitive domains such as healthcare and mental wellbeing.</li>
-										</ul>
-									</div></div></div>
-					         </article>
+				  <p><b>Office</b><br>
+					<span>Room 215, Engineering Building 4, No. 1001, Daxue Rd. East Dist., Hsinchu City 300, Taiwan</span><br>
+				  </p>
 
-
-
-							<article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-briefcase"></i>
-					               </div>
-					               <div class="timeline-label">
-					                  <h2><a href="https://www.airc.aist.go.jp/en/"><b>National Institute of Advanced Industrial Science and Technology (AIST)</b></a> <span>2024.01 - 2024.03</span></h2>
-										<p class="small-caps">Visiting scholar at Artificial Intelligence Research Center (AIRC)</p>
-										<ul><p><li>Consider emotion recognition of the interlocutor in dialogue system</li></p></ul>
-					               </div>
-
-					            </div>
-					         </article>
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-									<i class="icon-briefcase"></i>
-
-					               </div>
-					               <div class="timeline-label">
-
-										<h2><a href="https://www.itri.org.tw/english/"><b>Industrial Technology Research Institute (ITRI)</b></a> <span>2021.06 - 2021.08</span></h2>
-										<p class="small-caps">AI Medical Imaging Algorithm Intern</p>
-										<ul><p><li>Implement Graph Neural Networks on Electric Health Records</li></p></ul>
-									</div>
-					            </div>
-					         </article>
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-									<i class="icon-briefcase"></i>
-					               </div>
-
-					               <div class="timeline-label">
-
-										<h2><a href="https://www.nuvoton.com/"><b>Nuvoton Technology Corporation (Nuvoton Crop.)</b></a> <span>2017.10 - 2019.09</span></h2>
-										<p class="small-caps">Microcontroller System Application Engineer</p>
-										<ul><p><li>Mini-PCIe Expansion Adapter Boards (NB-IoT, LTE, LoRa Gateway)</li>
-										<li>Key Word Spotting (Speech Recognition) featuring the NuMicro M480 series microcontroller</li>
-										<li>Digital Image Recognition System featuring the NuMicro M480 series microcontroller</li>
-										<li>OLED Display with GIF Format Decode featuring the NuMicro M480 series microcontroller</li></p></ul>
-					               </div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      
-					      </div>
-	
-
-
-							<h2 class="colorlib-heading animate-box">COOPERATED PROJECTS</h2>
-
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-						<article class="timeline-entry animate-box">
-							<div class="timeline-entry-inner">
-
-								<div class="timeline-icon color-1">
-									<i class="icon-paper"></i>
-								</div>
-
-								<div class="timeline-label">
-									<details>
-										<summary>
-											<h2><b>Interactive Content Design Laboratory (Icd Lab.), <a href="https://www.tohoku.ac.jp/en/">Tohoku University</a>, Japan</b> <span>2025.04 - Present</span><p class="faq-plus">&plus;</p></h2>
-										</summary>
-										<p><b>Collaborator:</b> Professor <a href="#">Miao Cheng</a>, <a href="#">Chia-Huei Tseng</a> (Research Institute of Electrical Communication, Tohoku University)</p>
-										<ul>
-											<li>Initiate a new collaborative project to collect a large-scale VICON-based 3D motion capture database focused on emotional expressions during naturalistic interactions, integrating body gestures, speech, and emotional annotations.</li>
-											<li>Design continuous emotion annotation protocols across self, partner, and observer perspectives, aimed at enabling fine-grained multimodal analysis of dynamic emotional states for embodied AI applications.</li>
-										</ul>
-									</details>
-								</div>
-							</div>
-						</article>
-
-						<article class="timeline-entry animate-box">
-							<div class="timeline-entry-inner">
-
-								<div class="timeline-icon color-1">
-									<i class="icon-paper"></i>
-								</div>
-
-								<div class="timeline-label">
-									<details>
-										<summary>
-											<h2><b>Multimodal Signal Processing Laboratory (MSP Lab.), <a href="https://www.cmu.edu/">Carnegie Mellon University (CMU)</a>, USA</b> <span>2025.01 - Present</span><p class="faq-plus">&plus;</p></h2>
-										</summary>
-										<p><b>Collaborator:</b> Professor <a href="https://carlosbusso.com/">Carlos Busso</a> (Language Technologies Institute (LTI), CMU)</p>
-										<ul>
-											<li>Work on developing a large language model (LLM)-based annotation framework to support emotion retrieval in dyadic interaction datasets.</li>
-										</ul>
-									</details>
-								</div>
-							</div>
-						</article>
-
-							<article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-1">
-									<i class="icon-paper"></i>
-					               </div>
-
-					               <div class="timeline-label">
-										<details>
-											<summary>
-												<h2><a href="https://www.nstc.gov.tw/"><b>National Science and Technology Council: AI Innovation Research Center Project</b></a> <span>2022.02 - 2025.07</span><p class="faq-plus">&plus;</p></h2>
-											</summary>
-	
-											<p><li>Advanced Technologies for Designing Trustable AI Services.</li>
-											<li>Toward Realizing Into-Life Emotion AI through Robust, Scalable, and Trustworthy Affective Signal Modeling.</li></p>
-										</details>
-					               </div>
-					            </div>
-					         </article>
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-6">
-									<i class="icon-paper"></i>
-
-					               </div>
-
-					               <div class="timeline-label">
-										<details>
-											<summary>
-												<h2><a href="https://www.qualcomm.com/"><b>Qualcomm Incorporation, USA</b></a> <span>2022.08 - 2024.06</span><p class="faq-plus">&plus;</p></h2>
-											</summary>
-					                  		<p><li>Distributed learning for edge AI applications.</li>
-									 		 <li>Developing in-car automatic speech recognition and driver behavior recognition to enhance vehicle safety.</li></p>
-										</details>
-					               </div>
-					            </div>
-					         </article>
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-1">
-									<i class="icon-paper"></i>
-
-					               </div>
-
-					               <div class="timeline-label">
-										<details>
-											<summary>
-					                 			<h2><a href="https://ecs.utdallas.edu/research/researchlabs/msp-lab/"><b>Multimodal Signal Processing Laboratory (MSP Lab.), The University of Texas at Dallas</b></a> <span>2021.03 - Now</span><p class="faq-plus">&plus;</p></h2>
-											</summary>
-											<p><li>Propose the design of the affective naturalistic database consortium (AndC) with a customizable-standard framework for intelligently-controlled emotional data collection.</li>
-									  		<li>Present as a case study the development of a naturalistic large-scale Taiwanese Mandarin podcast corpus using the customizable-standard intelligently-controlled framework.</li></p>
-										</details>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-6">
-									<i class="icon-paper"></i>
-
-					               </div>
-
-					               <div class="timeline-label">
-										<details>
-											<summary>
-											<h2><a href="https://www.qualcomm.com/"><b>Qualcomm Incorporation, USA</b></a> <span>2022.01 - 2022.10</span><p class="faq-plus">&plus;</p></h2>
-											</summary>
-											<p><li>Stress prediction using bio-signals with federated learning.</li></p>
-										</details>
-									</div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-1">
-									<i class="icon-paper"></i>
-
-					               </div>
-					               <div class="timeline-label">
-										<details>
-											<summary>
-					               				<h2><a href="https://www.cmedia.com.tw/"><b>C-Media Electronics Incorporation (C-Media Inc.)</b></a> <span>2020.07 - 2021.01</span><p class="faq-plus">&plus;</p></h2>
-											</summary>
-					                  		<p><li>Implement AI de-reverberation de-noise algorithm based on deep noise suppression.</li></p>
-										</details>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-6">
-									<i class="icon-paper"></i>
-
-					               </div>
-					               <div class="timeline-label">
-										<details>
-											<summary>
-												<h2><a href="https://web.iii.org.tw/"><b>Institute for Information Industry (III)</b></a> <span>2020.05 - 2020.11</span><p class="faq-plus">&plus;</p></h2>
-											</summary>
-											<p><li>Develop a computer vision-based video retrieval system speeding up the fakenews screening process.</li>
-											<li>The system would be deployed by two NGO fakenews checkers Taiwan FactCheck Center and MyGoPen.</li></p>
-										</details>
-									</div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
-				   
-							<h2 class="colorlib-heading animate-box">Teaching</h2>
-
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-
-
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-book2"></i>
-					               </div>
-
-					               <div class="timeline-label">
-										<details>
-											<summary>
-												<h2><a href="https://www.futurelearn.com/"><b>Future Learn, Massive Open Online Course (MOOC)</b></a><p class="faq-plus">&plus;</p></h2>
-												<p class="small-caps">Teatching Material Designing Assistant</p>
-											</summary>
-
-											<div><p><li>Deconstructing Research : How to Read and Write a Research Paper (2023, 2024)</li></p></div>
-										</details>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-book2"></i>
-					               </div>
-
-					               <div class="timeline-label">
-										<details>
-											<summary>
-												<h2><a href="#"><b>National Tsing Hua University</b></a><p class="faq-plus">&plus;</p></h2>
-												<p class="small-caps">Teatching Assistant</p>
-											</summary>
-
-											<div><p>
-											<li>THC1024 Reliable Industrial Wireless Network Technology and Application (2023)</li>
-											<li>EE 3700 Introduction to Machine Learning (2022)</li>
-											<li>EE 3660 Introduction to Digital Signal Processing (2022)</li>
-											<li>EE 3900 Special Topic on Implementation (2021, 2022, 2023)</li>
-											<li>EECS 3010 Industry Internship (2021, 2022, 2023)</li>
-											<li>EE 3662 Digital Signal Processing Laboratory (2020)</li></p>
-											</div>
-										</details>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-book2"></i>
-					               </div>
-					               <div class="timeline-label">
-										<details>
-											<summary>
-												<h2><a href="#"><b>National Chung Cheng University</b></a><p class="faq-plus">&plus;</p></h2>
-												<p class="small-caps"> Teatching Assistant</p>
-											</summary>
-
-											<div><p><li>EE 4156114 Biomedical Signal Processing (2017)</li>
-											<li>EE 4151004 Introduction to Computers (2016)</li>
-											<li>EE 4153013 Digital Signal Processing Laboratory (2016)</li>
-											<li>EE 4153213 Introduction to Digital Signal Processing (2016)</li></p>
-										    </div>
-										</details>
-					            </div>
-					         </article>				   
-				   
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div></div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>				   
-				   
-				   
-				   
-				   
+				  <p style="margin-top:14px;">
+					<a class="btn-cv-icon" href="mailto:wschien@gapp.nthu.edu.tw" target="_blank"><i class="icon-bubble3"></i>
+					Email me</a>
+				  </p>
 				</div>
-			</section>
+			  </div>
 
-
-				<section class="colorlib-education" data-section="publication">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Publication</span>
-							<h2 class="colorlib-heading animate-box">PhD Dissertation</h2>		
-								<ol class="bibliography">
-									<div class="row">
-									<div id="chien-emo" class="col-sm-11">
-									<div class="title"><font color="black"><b>"From Data Resource Impacts to Fairness Realization in Speech Emotion Recognition"</b></font> , National Tsing Hua University, March 2025.</div>
-									<div class="title">語音情緒辨識中之資料來源影響與公平性實現, 國立清華大學電機系, 2025年3月</div>
-
-									</div></div>
-								</ol>
-								<br>
-									
-							<h2 class="colorlib-heading animate-box">MS Thesis</h2>
-								<ol class="bibliography">
-									<div class="row">
-									<div id="chien-emo" class="col-sm-11">
-									<div class="title"><font color="black"><b>"Back-propagation and Convolutional Neural Networks for Arrhythmia Electrocardiogram Classification"</b></font> , National Chung Cheng University, July 2017.</div>
-									<div class="title">以倒傳遞及卷積神經網路辨識心律不整心電圖之研究, 國立中正大學電機系, 2017年7月</div>
-
-								</div></div>
-								</ol>
-								<br>
-									
-							<h2 class="colorlib-heading animate-box">International journal</h2>
-						
-								<ol class="bibliography">
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/TAFFC.2025.3597034" target="_blank" rel="noopener">
-									Affective Priming in Emotional Annotations and its Effect on Speech Emotion Recognition</a></b></font><img src="images/New.png" title="new" height="20" draggable="false" class="animated flash infinite"></div>
-									<div class="author">Luz Martinez-Lucas, Ali Salman, Seong-Gyun Leem, <b><u>Woan-Shiuan Chien</u></b>, Shreya G. Upadhyay, Chi-Chun Lee and Carlos Busso</div>
-									<div class="periodical"><abbr class="badge"><a href="https://www.computer.org/csdl/journal/ta">TAFFC</abbr></a>
-									<em>IEEE Transactions on Affective Computing, 2025</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://ieeexplore.ieee.org/document/10771725" target="_blank" rel="noopener">
-									Differential Impacts of Monologue and Conversation on Speech Emotion Recognition</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b>, Shreya G. Upadhyay, Wei-Cheng Lin, Carlos Busso and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://www.computer.org/csdl/journal/ta">TAFFC</abbr></a>
-									<em>IEEE Transactions on Affective Computing, 2024</em>
-									<a class="btn btn-sm z-depth-0" role="text" ><font color="#FB333">Impact Factor: 9.8 (2024)</font></a>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://ieeexplore.ieee.org/document/10417135" target="_blank" rel="noopener">
-									Learning With Rater-Expanded Label Space to Improve Speech Emotion Recognition</a></b></font></div>
-									<div class="author">Shreya G. Upadhyay, <b><u>Woan-Shiuan Chien</u></b> , Bo-Hao Su, and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://www.computer.org/csdl/journal/ta">TAFFC</abbr></a>
-									<em>IEEE Transactions on Affective Computing, 2024</em>
-									<a class="btn btn-sm z-depth-0" role="text" ><font color="#FB333">Impact Factor: 9.8 (2024)</font></a>
-									</div></div></div></li>
-								</ol>
-									
-							<h2 class="colorlib-heading animate-box">International Conference</h2>
-						
-								<ol class="bibliography">
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="#" target="_blank" rel="noopener">
-									Audience-Aware Co-Speech Gesture Generation in Public Speaking via Anticipation Tokens</a></b></font><img src="images/New.png" title="new" height="20" draggable="false" class="animated flash infinite"></div>
-									<div class="author">Huan-Yu Chen, <b><u>Woan-Shiuan Chien</u></b> and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2026.ieeeicassp.org/">ICASSP</abbr></a>
-									<em>In Proceeding of the 51st IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP‘26), Barcelona, Spain, May 4-8, 2026.</em>
-									</div></div></div></li>
-									
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="#" target="_blank" rel="noopener">
-									Rethinking Multilingual and Multimodal Interactive Datasets: Challenges, Limitations and Potentials</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b>, Huan-Yu Chen, Shu-Ying Liu, Yuan-Liang An, Ching-Shin Hsiao, Yangyang Cai, Victor Pierre Schneider, Miao Cheng, Chia-Huei Tseng and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://acii-conf.net/2025/">ACII</abbr></a>
-									<em>In Proceeding of 2025 13th IEEE International Conference on Affective Computing and Intelligent Interaction Workshops and Demos (ACIIW‘25), Canberra, Australia, October 8-11, 2025.</em>
-									</div></div></div></li>
-									
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/MLSP62443.2025.11204334" target="_blank" rel="noopener">
-									Graph Structure Learning with Local Connectivity Refinement for Improved Physiological Emotion Recognition</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b>, Mei-Yen Tsai and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2025.ieeemlsp.org/en/">MLSP</abbr></a>
-									<em>In Proceeding of 2025 IEEE International Workshop on Machine Learning for Signal Processing (MLSP‘25), Istanbul, Turkey, August 31-September 3, 2025.</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/EMBC58623.2025.11252844" target="_blank" rel="noopener">
-									Gradient-Aware Data Augmentation for Federated Stress Detection under Data Incompleteness</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b>, Huan-Yu Chen and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://ieeexplore.ieee.org/document/11252844">EMBC</abbr></a>
-									<em>In Proceeding of 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC‘25), Copenhagen, Denmark, July 14-17, 2025.</em>
-									</div></div></div></li>
-									
-									
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/EMBC58623.2025.11254223" target="_blank" rel="noopener">
-									Instrument-Aware Representation Learning for Robust Cross-Site Flow Cytometry Integration</a></b></font></div>
-									<div class="author">Huan-Yu Chen, <b><u>Woan-Shiuan Chien</u></b>, Yu-Fen Wang, Bor-Sheng Ko and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://biomedicalimaging.org/2025/">EMBC</abbr></a>
-									<em>In Proceeding of 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC‘25), Copenhagen, Denmark, July 14-17, 2025.</em>
-									</div></div></div></li>
-									
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ISBI60581.2025.10980760" target="_blank" rel="noopener">
-									Leveraging Foundation Models for Clinically Instructed Tumor Image Synthesis in Renal Cell Carcinoma</a></b></font></div>
-									<div class="author">Huan-Yu Chen, <b><u>Woan-Shiuan Chien</u></b>, Ching-Heng Lin and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://biomedicalimaging.org/2025/">ISBI</abbr></a>
-									<em>In Proceeding of the 22nd IEEE International Symposium on Biomedical Imaging (ISBI‘25), Huston, TX, USA, April 14-17, 2025.</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ICASSP49660.2025.10888319" target="_blank" rel="noopener">
-									Disentangle Heart Rate Signals for Improved Stress Detection</a></b></font></div>
-									<div class="author">Pin-Jhao Chen, <b><u>Woan-Shiuan Chien</u></b> and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2025.ieeeicassp.org/">ICASSP</abbr></a>
-									<em>In Proceeding of the 50th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP‘25), Hyderabad, India, April 6-11, 2025.</em>
-									</div></div></div></li>
-									
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ICASSP49660.2025.10890191" target="_blank" rel="noopener">
-									A Dynamic Edge-Selection Mechanism in HRV Hypergraph Learning for Improved Stress Detection</a></b></font></div>
-									<div class="author">Jing-Chun Wang, <b><u>Woan-Shiuan Chien</u></b> and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2025.ieeeicassp.org/">ICASSP</abbr></a>
-									<em>In Proceeding of the 50th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP‘25), Hyderabad, India, April 6-11, 2025.</em>
-									</div></div></div></li>							
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ICASSP49660.2025.10889760" target="_blank" rel="noopener">
-									Is It Still Fair? Investigating Gender Fairness in Cross-Corpus Speech Emotion Recognition</a></b></font></div>
-									<div class="author">Shreya G. Upadhyay, <b><u>Woan-Shiuan Chien</u></b> and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2025.ieeeicassp.org/">ICASSP</abbr></a>
-									<em>In Proceeding of the 50th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP‘25), Hyderabad, India, April 6-11, 2025.</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/BSN63547.2024.10780500" target="_blank" rel="noopener">
-									Understanding Missing Data Bias in Longitudinal Mental Stress Detection</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b> and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://bsn.embs.org/2024/">BSN</abbr></a>
-									<em>In Proceedings of IEEE 21st International Conference on Body Sensor Networks (BSN‘24), Chigago, USA, Oct 15-17, 2024.</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/BSN63547.2024.10780687" target="_blank" rel="noopener">
-									Stress Detection Using HRV Features Augmentation Based on Heart Rate Signal Transformation</a></b></font></div>
-									<div class="author">Pin-Jhao Chen, <b><u>Woan-Shiuan Chien</u></b>, Huan-Yu Chen, and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://bsn.embs.org/2024/">BSN</abbr></a>
-									<em>In Proceedings of IEEE 21st International Conference on Body Sensor Networks (BSN‘24), Chigago, USA, Oct 15-17, 2024.</em>
-									</div></div></div></li>
-									
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/BSN63547.2024.10780546" target="_blank" rel="noopener">
-									In-The-Wild HRV-Based Stress Detection Using Individual-Aware Metric Learning</a></b></font></div>
-									<div class="author">Jing-Chun Wang, <b><u>Woan-Shiuan Chien</u></b>, Huan-Yu Chen, and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://bsn.embs.org/2024/">BSN</abbr></a>
-									<em>In Proceedings of IEEE 21st International Conference on Body Sensor Networks (BSN‘24), Chigago, USA, Oct 15-17, 2024.</em>
-									</div></div></div></li>	
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.21437/Interspeech.2024-461" target="_blank" rel="noopener">
-									An Investigation of Group versus Individual Fairness in Perceptually Fair Speech Emotion Recognition</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b> and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://interspeech2024.org/">Interspeech</abbr></a>
-									<em>In Proceeding of Conference of the International Speech Communication Association (Interspeech‘24), Kos Island, Greece, Sep 1-5, 2024.</em>
-									</div></div></div></li>
-									
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.21437/Interspeech.2024-471" target="_blank" rel="noopener">
-									An Inter-Speaker Fairness-Aware Speech Emotion Regression Framework</a></b></font></div>
-									<div class="author">Hsing-Hang Chou, <b><u>Woan-Shiuan Chien</u></b>, Ya-Tse Wu and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://interspeech2024.org/">Interspeech</abbr></a>
-									<em>In Proceeding of Conference of the International Speech Communication Association (Interspeech‘24), Kos Island, Greece, Sep 1-5, 2024.</em>
-									</div></div></div></li>
-	
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ICASSP48485.2024.10447167" target="_blank" rel="noopener">
-									Balancing Speaker-Rater Fairness for Gender-Neutral Speech Emotion Recognition</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b>, Shreya G. Upadhyay and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2024.ieeeicassp.org/">ICASSP</abbr></a>
-									<em>In Proceeding of the 49th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP’24), Seoul, Korea, April 14-19, 2024.</em>
-									<a class="btn btn-sm z-depth-0" role="text" ><font color="#D62728">Merry Electroacoustic Thesis Award Finalist</font></a>
-									</div></div></div></li>
-									
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ICASSP48485.2024.10446004" target="_blank" rel="noopener">
-									In-The-Wild Physiological-Based Stress Detection Using Federated Strategy</a></b></font></div>
-									<div class="author">Po-Chen Lin, Jeng-Lin Li, <b><u>Woan-Shiuan Chien</u></b> and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2024.ieeeicassp.org/">ICASSP</abbr></a>
-									<em>In Proceeding of the 49th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP’24), Seoul, Korea, April 14-19, 2024.</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ACII59096.2023.10388175" target="_blank" rel="noopener">
-									An Intelligent Infrastructure Toward Large Scale Naturalistic Affective Speech Corpora Collection</a></b></font></div>
-									<div class="author">Shreya G. Upadhyay*, <b><u>Woan-Shiuan Chien*</u></b> , Bo-Hao Su, Lucas Goncalves, Ya-Tse Wu, Ali N. Salman, Carlos Busso and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://acii-conf.net/2023/">ACII</abbr></a>
-									<em>In Proceeding of the 11th International Conference on Affective Computing & Intelligent Interaction (ACII ‘23), 2023</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ICASSP49357.2023.10094984" target="_blank" rel="noopener">
-									Achieving Fair Speech Emotion Recognition via Perceptual Fairness</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b> and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2023.ieeeicassp.org/">ICASSP</abbr></a>
-									<em>In Proceeding of the 48th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP’23), Rhodes Island, Greece, June 4-10, 2023.</em>
-									</div></div></div></li>
-									
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ICASSP49357.2023.10095250" target="_blank" rel="noopener">
-									Phonetic Anchor-Based Transfer Learning To Facilitate Unsupervised Cross-Lingual Speech Emotion Recognition</a></b></font></div>
-									<div class="author">Shreya G. Upadhyay, Luz Martinez-Lucas, Bo-Hao Su, Wei-Cheng Lin, <b><u>Woan-Shiuan Chien</u></b>, Ya-Tse Wu, William Katz, Carlos Busso and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2023.ieeeicassp.org/">ICASSP</abbr></a>
-									<em>In Proceeding of the 48th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP’23), Rhodes Island, Greece, June 4-10, 2023.</em>
-									</div></div></div></li>									
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1109/ACII55700.2022.9953814" target="_blank" rel="noopener">
-									Monologue versus Conversation: Differences in Emotion Perception and Acoustic Expressivity</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b>, Shreya G. Upadhyay, Wei-Cheng Lin, Ya-Tse Wu, Bo-Hao Su, Carlos Busso and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://acii-conf.net/2022/">ACII</abbr></a>
-									<em>In Proceeding of the 10th International Conference on Affective Computing & Intelligent Interaction (ACII’22), Hybrid Event / Nara, Japan, October 18-21, 2022.</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1145/3461615.348541" target="_blank" rel="noopener">
-									Self-assessed Emotion Classification from Acoustic and Physiological Features within Small-group Conversation</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b>, Huang-Cheng Chou and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://icmi.acm.org/2021/">ICMI</abbr></a>
-									<em>In Companion Publication of the 23rd ACM International Conference on Multimodal Interaction (ICMI’21), Hybrid Event / Montreal, Canada, October 18-22, 2021.</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1145/3461615.3485410" target="_blank" rel="noopener">
-									Belongingness and Satisfaction Recognition from Physiological Synchrony with A Group-Modulated Attentive BLSTM under Small-group Conversation</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b>, Huang-Cheng Chou and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://icmi.acm.org/2021/">ICMI</abbr></a>
-									<em>In Companion Publication of the 23rd ACM International Conference on Multimodal Interaction (ICMI’21), Hybrid Event / Montreal, Canada, October 18-22, 2021.</em>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.18653/v1/2021.findings-acl.162" target="_blank" rel="noopener">
-									“Does it Matter When I Think You Are Lying?” Improving Deception Detection by Integrating Interlocutor’s Judgements in Conversations</a></b></font></div>
-									<div class="author">Huang-Cheng Chou, <b><u>Woan-Shiuan Chien</u></b>, Da-Cheng Juan and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2021.aclweb.org/">ACL</abbr></a>
-									<em>In Findings of the Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL-IJCNLP’21), Virtual Event / Bangkok, Thailand, August 1-6, 2021.</em>
-									<a class="btn btn-sm z-depth-0" role="text" ><font color="#D62728">Merry Electroacoustic Thesis Award</font></a>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1145/3394171.3413552" target="_blank" rel="noopener">
-									Cross Corpus Physiological-based Emotion Recognition Using a Learnable Visual Semantic Graph Convolutional Network</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b>, Hao-ChunYang and Chi-Chun Lee</div>
-									<div class="periodical"><abbr class="badge"><a href="https://2020.acmmm.org/">ACMMM</abbr></a>
-									<em>In Proceedings of the 25th ACM International Conference on Multimedia (MM’20), Virtual Event / Seattle, USA, October 12-16, 2020.</em>
-									<a class="btn btn-sm z-depth-0" role="text" ><font color="#D62728">Acceptance rate: 27.8 % </font></a>
-									</div></div></div></li>
-
-									<div class="row"><li>
-									<div id="chien-emo" class="col-sm-12">
-									<div class="title"><b><a class="a2" href="https://doi.org/10.1145/3133793.3133807" target="_blank" rel="noopener">
-									Identification of Myocardial Ischemic and Infarction Episodes Based on ST Level and Beat Type Re-attribution Method</a></b></font></div>
-									<div class="author"><b><u>Woan-Shiuan Chien</u></b> and Sung-Nien Yu</div>
-									<div class="periodical"><abbr class="badge"><a href="https://www.icbip.org/icbip2017.html">ICBIP</abbr></a>
-									<em>In Proceedings of the 2nd International Conference on Biomedical Signal and Image Processing (ICBIP’17), Kitakyushu, Japan, August 23-25, 2017.</em>
-									</div></div></div></li>	
-								</ol>
-
-
-				   </div>
+			  <!-- Right: map -->
+			  <div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
+				<div class="map-wrap">
+				  <iframe
+					title="NYCU Map"
+					src="https://www.google.com/maps?q=National%20Yang%20Ming%20Chiao%20Tung%20University%20Hsinchu&z=15&output=embed"
+					width="100%" height="360"
+					style="border:0;" allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade">
+				  </iframe>
 				</div>
-			</section>
+			  </div>
+			</div>
+
+		  </div>
+        </section>
+
+
+				
 			
 
 		</div><!-- end:colorlib-main -->
