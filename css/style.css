@@ -139,7 +139,7 @@ figure {
   #colorlib-aside #colorlib-logo {
     text-align: right;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: .5em;
     display: block;
     width: 100%; }
@@ -238,7 +238,8 @@ figure {
         list-style: none; }
         #colorlib-aside .colorlib-footer ul li a {
           color: rgba(255, 255, 255, 0.3);
-          padding: 4px; }
+          padding: 4px; 
+		  font-size: 22px;}
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
             outline: none;
@@ -1265,8 +1266,8 @@ body.offcanvas {
   color: #fff;
   border: 2px solid #5bc0de; }
   .btn-info:hover, .btn-info:focus, .btn-info:active {
-    background: #46b8da !important;
-    border-color: #46b8da !important; }
+    background: #312434 !important;
+    border-color: #312434 !important; }
   .btn-info.btn-outline {
     background: transparent;
     color: #5bc0de;
@@ -1501,10 +1502,80 @@ body.offcanvas {
 	cursor: pointer;
 }
 
-
 details {
   display: block;
 }
 summary {
   display: block;
 }
+
+#colorlib-aside .colorlib-footer ul li a {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+#colorlib-aside .colorlib-footer ul li a:hover,
+#colorlib-aside .colorlib-footer ul li a:active,
+#colorlib-aside .colorlib-footer ul li a:focus {
+  color: #6C5070 !important;
+}
+
+#colorlib-aside {
+  display: flex;
+  flex-direction: column;
+}
+
+#colorlib-aside .colorlib-footer {
+  margin-top: auto;     /* push footer to bottom */
+  padding-bottom: 20px; /* optional: give some breathing room */
+}
+
+/* Contact section */
+.colorlib-contact .contact-card{
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.08);
+  border-radius:10px;
+  padding:18px 18px;
+}
+
+.colorlib-contact .contact-card p{
+  margin-bottom:14px;
+}
+
+.colorlib-contact .map-wrap{
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid rgba(0,0,0,0.08);
+}
+
+.btn-cv-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  font-family: 'PT Sans', 'Ubuntu', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  background: #6C5070;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-cv-icon i {
+  font-size: 20px;
+}
+
+.btn-cv-icon:hover {
+  background: #312434;
+  text-decoration: none;
+  color: #FCDBA6;
+}
+
+.btn-cv-icon i {
+  transition: transform 0.25s ease;
+}
+
+.btn-cv-icon:hover i {
+  transform: translateY(-2px);
+}
+
