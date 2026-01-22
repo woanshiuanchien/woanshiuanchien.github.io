@@ -601,15 +601,15 @@ body.offcanvas {
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
     color: #fff; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
-    background: #976666; }
+    background: #FAB950; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
-    background: #c09d9b; }
+    background: #E26E81; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
-    background: #BEBEBE; }
+    background: #6C5070; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
-    background: #7A848D; }
+    background: #E26E81; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-6 {
-    background: #A9B7AA;  }
+    background: #E26E81;  }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
     background: #fff;
     width: 20px;
@@ -819,11 +819,11 @@ body.offcanvas {
     top: -22px;
     right: 0; }
   .progress-bar.color-1 {
-    background: #DBD2C9; }
+    background: #E26E81; }
     .progress-bar.color-1:after {
-      background: #DBD2C9; }
+      background: #E26E81; }
     .progress-bar.color-1 span {
-      color: #DBD2C9; }
+      color: #E26E81; }
   .progress-bar.color-2 {
     background: #976666; }
     .progress-bar.color-2:after {
@@ -1579,3 +1579,23 @@ summary {
   transform: translateY(-2px);
 }
 
+.pub-icons{
+  margin: 8px 0 38px;      /* 跟標題拉開 */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pub-icons img{
+  width: 28px;
+  height: 28px;
+  opacity: 0.55;           /* 變淡 */
+      /* 灰階：不突兀 */
+  transition: all .2s ease;
+}
+
+.pub-icons a:hover img{
+  opacity: 1;
+  filter: none;            /* hover 才回彩色 */
+  transform: translateY(-1px);
+}
