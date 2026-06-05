@@ -1,0 +1,285 @@
+/* =======================================================
+ * Site-level custom styles
+ * Keep original Colorlib/bootstrap CSS in css/style.css.
+ * Put new site colors, helper classes, page-specific styles,
+ * and inline-style replacements here.
+ * ======================================================= */
+
+:root {
+  --site-accent: #6C5070;
+  --site-accent-dark: #312434;
+  --site-sidebar-bg: #f2f3f7;
+  --site-alert-red: #D62728;
+  --site-info-blue: #3663A1;
+  --site-soft-yellow: #FEEFD6;
+  --site-badge-yellow: #FCDBA6;
+  --site-vision-yellow: #F3E29C;
+  --site-muted-purple: #5A476F;
+  --site-text-dark: #2f2f2f;
+  --site-text-muted: #555;
+  --site-border-light: #eeeeee;
+}
+
+/* ---------- Shared sidebar ---------- */
+.site-author-img {
+  background-image: url("../images/profile.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#colorlib-aside .colorlib-social-menu {
+  display: block;
+  width: 100%;
+  padding-bottom: 20%;
+}
+
+#colorlib-aside .colorlib-social-menu ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#colorlib-aside .colorlib-social-menu ul li {
+  display: inline-block;
+  margin: 0 6px;
+  list-style: none;
+}
+
+#colorlib-aside .colorlib-social-menu ul li a {
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 18px;
+}
+
+#colorlib-aside .colorlib-social-menu ul li a:hover,
+#colorlib-aside .colorlib-social-menu ul li a:active,
+#colorlib-aside .colorlib-social-menu ul li a:focus {
+  color: var(--site-accent) !important;
+}
+
+/* ---------- Home page helpers ---------- */
+.hero-slide-2025-rs { background-image: url("../images/2025-rs.jpg"); }
+.hero-slide-2024-graduate { background-image: url("../images/2024-graduate.jpg"); }
+.hero-slide-2024-graduate-2 { background-image: url("../images/2024-graduate-2.jpg"); }
+.hero-slide-2023-icassp { background-image: url("../images/2023-icassp.jpg"); }
+.hero-slide-2023-acii { background-image: url("../images/2023-acii.jpg"); }
+.hero-slide-2024-icassp { background-image: url("../images/2024-icassp.jpg"); }
+.hero-slide-2025-rs-2 { background-image: url("../images/2025-rs-2.jpg"); }
+
+.position-highlight {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.student-notice {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--site-soft-yellow);
+  border: 2px dotted #000;
+  color: #000;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 300;
+  white-space: normal;
+}
+
+.student-notice__title {
+  display: inline-block;
+  color: var(--site-alert-red);
+  font-weight: 500;
+}
+
+.contact-action {
+  margin-top: 14px;
+}
+
+.colorlib-contact iframe,
+.colorlib-Contact iframe {
+  border: 0;
+}
+
+/* ---------- Publication helpers ---------- */
+.pub-title-main {
+  color: #000;
+}
+
+.text-award {
+  color: var(--site-alert-red);
+}
+
+.text-info-blue {
+  color: var(--site-info-blue);
+}
+
+.text-accent {
+  color: var(--site-accent);
+}
+
+.publication-subheading {
+  color: var(--site-accent);
+}
+
+/* ---------- Research page ---------- */
+.research-intro {
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--site-text-muted);
+  margin-bottom: 35px;
+}
+
+.research-section-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--site-text-dark);
+  margin-bottom: 18px;
+  border-left: 4px solid var(--site-accent);
+  padding-left: 14px;
+}
+
+.vision-badge {
+  display: inline-block;
+  background: var(--site-vision-yellow);
+  color: var(--site-muted-purple);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 10px 18px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.vision-figure-wrap {
+  background: #fff;
+  border: 1px solid var(--site-border-light);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  margin-bottom: 18px;
+}
+
+.vision-figure-wrap img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.vision-caption {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-top: 18px;
+  margin-bottom: 45px;
+}
+
+.topic-card {
+  background: #fff;
+  border: 1px solid var(--site-border-light);
+  border-radius: 16px;
+  padding: 28px 28px 24px 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.045);
+  transition: all 0.25s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.topic-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.topic-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--site-accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.topic-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(108, 80, 112, 0.10);
+  color: var(--site-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.topic-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--site-text-dark);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.topic-desc {
+  font-size: 17px;
+  line-height: 1.95;
+  color: var(--site-text-muted);
+  margin: 0 0 22px 0;
+  text-align: justify;
+}
+
+.topic-figure-wrap {
+  background: #fafafa;
+  border: 1px solid var(--site-border-light);
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 6px;
+}
+
+.topic-figure-wrap img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.research-note {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #777;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .topic-header {
+    align-items: flex-start;
+  }
+
+  .topic-title {
+    font-size: 21px;
+  }
+
+  .topic-desc,
+  .research-intro,
+  .vision-caption {
+    font-size: 16px;
+  }
+
+  .vision-badge {
+    font-size: 17px;
+    padding: 8px 14px;
+    border-radius: 12px;
+  }
+}
