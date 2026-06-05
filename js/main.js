@@ -232,6 +232,10 @@
 
 	var stickyFunction = function() {
 
+		if (!$.fn.stick_in_parent || !$('#sticky_item').length) {
+			return;
+		}
+
 		var h = $('.image-content').outerHeight();
 
 		if ($(window).width() <= 992 ) {
