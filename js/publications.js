@@ -17,10 +17,6 @@
     return value !== undefined && value !== null && String(value).trim() !== '';
   }
 
-  function isRealUrl(url) {
-    return hasValue(url) && String(url).trim() !== '#';
-  }
-
   function normalizeBoolean(value) {
     if (value === true) return true;
     if (value === false) return false;
@@ -36,80 +32,158 @@
     });
   }
 
-  function makeLink(label, url, className) {
-    var safeLabel = escapeHtml(label);
-    var classes = className ? ' class="' + className + '"' : '';
-    if (!isRealUrl(url)) return '<span' + classes + '>' + safeLabel + '</span>';
-    return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener"' + classes + '>' + safeLabel + '</a>';
+  function cleanSpacing(text) {
+    return String(text || '')
+      .replace(/\s+([,，])/g, '$1')
+      .replace(/([,，])(?=\S)/g, '$1 ')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
   }
 
-  function renderMultiLineTags(value, className) {
+  function renderAuthors(value) {
+    var text = cleanSpacing(value);
+    if (!text) return '';
+
+    var escaped = escapeHtml(text);
+    return escaped
+      .replace(/Woan-Shiuan Chien/g, '<b><u>Woan-Shiuan Chien</u></b>')
+      .replace(/簡婉軒/g, '<b><u>簡婉軒</u></b>');
+  }
+
+  function makeTitleLink(label, url) {
+    var href = hasValue(url) ? String(url).trim() : '#';
+    return '<a class="a2" href="' + escapeHtml(href) + '" target="_blank" rel="noopener">' + escapeHtml(label) + '</a>';
+  }
+
+  function makeVenueBadge(label, url) {
+    if (!hasValue(label)) return '';
+
+    var safeLabel = escapeHtml(label);
+    var href = hasValue(url) ? String(url).trim() : '#';
+
+    return [
+      '<abbr class="badge">',
+      '<a href="' + escapeHtml(href) + '" target="_blank" rel="noopener">' + safeLabel + '</a>',
+      '</abbr> '
+    ].join('');
+  }
+
+  function renderTags(value, className) {
     if (!hasValue(value)) return '';
+
     return String(value)
       .split(/\r?\n/)
       .map(function (tag) { return tag.trim(); })
       .filter(Boolean)
       .map(function (tag) {
-        return '<span class="' + className + '">' + escapeHtml(tag) + '</span>';
+        return '<code><span class="' + className + '">' + escapeHtml(tag) + '</span></code>';
       })
-      .join('<br>');
+      .join('\n');
+  }
+
+  function renderNewBadge(item) {
+    if (!normalizeBoolean(item.is_new)) return '';
+
+    return '<img src="' + root + 'images/New.png" title="new" alt="new" height="20" draggable="false" class="animated flash infinite pub-new-badge">';
   }
 
   function renderDegreeSection(containerId, items) {
     var container = document.getElementById(containerId);
     if (!container) return;
 
-    container.innerHTML = sortByOrder(items).map(function (item) {
-      var awardHtml = renderMultiLineTags(item.award_tags, 'text-award');
+    var html = sortByOrder(items).map(function (item) {
+      var lines = [];
+
+      if (hasValue(item.title_en) || hasValue(item.degree_info_en)) {
+        lines.push(
+          '<div class="title">' +
+          (hasValue(item.title_en) ? '<strong class="pub-title-main">&quot;' + escapeHtml(item.title_en) + '&quot;</strong>' : '') +
+          (hasValue(item.degree_info_en) ? ' , ' + escapeHtml(item.degree_info_en) : '') +
+          '</div>'
+        );
+      }
+
+      if (hasValue(item.title_zh) || hasValue(item.degree_info_zh)) {
+        lines.push(
+          '<div class="title">' +
+          (hasValue(item.title_zh) ? escapeHtml(item.title_zh) : '') +
+          (hasValue(item.degree_info_zh) ? ', ' + escapeHtml(item.degree_info_zh) : '') +
+          '</div>'
+        );
+      }
+
+      if (hasValue(item.award_tags)) {
+        lines.push(renderTags(item.award_tags, 'text-award'));
+      }
+
       return [
-        '<p>',
-        hasValue(item.title_en) ? '<span class="pub-title-main"><strong>' + escapeHtml(item.title_en) + '</strong></span><br>' : '',
-        hasValue(item.degree_info_en) ? escapeHtml(item.degree_info_en) + '<br>' : '',
-        hasValue(item.title_zh) ? '<span class="text-accent">' + escapeHtml(item.title_zh) + '</span><br>' : '',
-        hasValue(item.degree_info_zh) ? escapeHtml(item.degree_info_zh) : '',
-        awardHtml ? '<br>' + awardHtml : '',
-        '</p>'
-      ].join('');
-    }).join('');
+        '<ol class="bibliography">',
+        '<div class="row">',
+        '<div id="chien-emo" class="col-sm-11">',
+        lines.join('\n'),
+        '</div>',
+        '</div>',
+        '</ol>',
+        '<br>'
+      ].join('\n');
+    }).join('\n');
+
+    container.innerHTML = html;
   }
 
   function renderPaperItem(item) {
-    var title = makeLink(item.title, item.url, 'pub-title-main');
-    var newBadge = normalizeBoolean(item.is_new)
-      ? ' <img src="' + root + 'images/New.png" alt="New" class="pub-new-badge">'
-      : '';
-    var venue = hasValue(item.venue_abbr)
-      ? '[' + makeLink(item.venue_abbr, item.venue_url, 'publication-subheading') + '] '
-      : '';
-    var awardHtml = renderMultiLineTags(item.award_tags, 'text-award');
-    var infoHtml = renderMultiLineTags(item.info_tags, 'text-info-blue');
+    var titleHtml = makeTitleLink(item.title, item.url);
+    var newBadge = renderNewBadge(item);
+    var authorsHtml = hasValue(item.authors) ? renderAuthors(item.authors) : '';
+    var venueHtml = makeVenueBadge(item.venue_abbr, item.venue_url);
+    var descriptionHtml = hasValue(item.description) ? '<em>' + escapeHtml(item.description) + '</em>' : '';
+    var awardHtml = renderTags(item.award_tags, 'text-award');
+    var infoHtml = renderTags(item.info_tags, 'text-info-blue');
 
     return [
-      '<li>',
-      '<span class="pub-title-main"><strong>' + title + '</strong></span>' + newBadge,
-      hasValue(item.authors) ? '<br>' + escapeHtml(item.authors) + '.' : '',
-      hasValue(item.description) || venue ? '<br>' + venue + escapeHtml(item.description) : '',
-      awardHtml ? '<br>' + awardHtml : '',
-      infoHtml ? '<br>' + infoHtml : '',
-      '</li>'
-    ].join('');
+      '<div class="row"><li>',
+      '<div id="chien-emo" class="col-sm-12">',
+      '<div class="title"><b>' + titleHtml + '</b>' + newBadge + '</div>',
+      authorsHtml ? '<div class="author">' + authorsHtml + '</div>' : '',
+      (venueHtml || descriptionHtml || awardHtml || infoHtml) ? [
+        '<div class="periodical">',
+        venueHtml,
+        descriptionHtml,
+        awardHtml ? '\n' + awardHtml : '',
+        infoHtml ? '\n' + infoHtml : '',
+        '</div>'
+      ].join('') : '',
+      '</div>',
+      '</div></li>'
+    ].join('\n');
   }
 
   function renderPaperList(containerId, items) {
     var container = document.getElementById(containerId);
     if (!container) return;
-    container.innerHTML = '<ol class="publication-list">' + sortByOrder(items).map(renderPaperItem).join('') + '</ol>';
+
+    container.innerHTML = [
+      '<ol class="bibliography">',
+      sortByOrder(items).map(renderPaperItem).join('\n'),
+      '</ol>',
+      '<br>'
+    ].join('\n');
   }
 
   function renderPatentItem(item) {
-    var title = makeLink(item.title, item.url, 'pub-title-main');
+    var titleHtml = makeTitleLink(item.title, item.url);
+    var authorsHtml = hasValue(item.authors) ? renderAuthors(item.authors) : '';
+    var descriptionHtml = hasValue(item.description) ? '<em>' + escapeHtml(item.description) + '</em>' : '';
+
     return [
-      '<li>',
-      '<span class="pub-title-main"><strong>' + title + '</strong></span>',
-      hasValue(item.authors) ? '<br>' + escapeHtml(item.authors) + '.' : '',
-      hasValue(item.description) ? '<br>' + escapeHtml(item.description) : '',
-      '</li>'
-    ].join('');
+      '<div class="row"><li>',
+      '<div id="chien-emo" class="col-sm-12">',
+      '<div class="title"><b>' + titleHtml + '</b></div>',
+      authorsHtml ? '<div class="author">' + authorsHtml + '</div>' : '',
+      descriptionHtml,
+      '</div>',
+      '</div></li>'
+    ].join('\n');
   }
 
   function renderPatents(containerId, items) {
@@ -118,6 +192,7 @@
 
     var sorted = sortByOrder(items);
     var groups = [];
+
     sorted.forEach(function (item) {
       var groupName = hasValue(item.group) ? String(item.group).trim() : 'Patents';
       var group = groups.find(function (g) { return g.name === groupName; });
@@ -128,19 +203,21 @@
       group.items.push(item);
     });
 
+    var runningStart = 1;
     container.innerHTML = groups.map(function (group) {
-      return [
-        '<h4 class="publication-subheading">' + escapeHtml(group.name) + '</h4>',
-        '<ol class="publication-list">',
-        group.items.map(renderPatentItem).join(''),
+      var html = [
+        '<span class="text-accent"><b><em>' + escapeHtml(group.name) + '</em></b></span><br>',
+        '<ol class="bibliography"' + (runningStart > 1 ? ' start="' + runningStart + '"' : '') + '>',
+        group.items.map(renderPatentItem).join('\n'),
         '</ol>'
-      ].join('');
-    }).join('');
+      ].join('\n');
+
+      runningStart += group.items.length;
+      return html;
+    }).join('\n') + '<br>';
   }
 
   function showLoadError(error) {
-    // Keep the public page from silently failing if data/publications.json or this script is missing.
-    // Details are available in the browser console for debugging.
     console.error('Unable to load publication data:', error);
     var container = document.getElementById('publication-dissertation');
     if (container) {
