@@ -1,40 +1,46 @@
 {
   "invited_talks": [
     {
-      "organization": "2026 TWSIAM年會",
-      "topic": "Advancing AI for Disordered Speech: Assessment, Accessibility, and Articulation",
-      "place": "FJU, Taipei",
-      "date": "2026/06/13"
+      "organization": "NTHU｜Research Talent Resource Center",
+      "topic": "Preparing for the Faculty Market: Positioning, Storytelling, and Timing",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/07/08"
     },
     {
-      "organization": "BrainHack School 2026 產學交流",
-      "topic": "",
-      "place": "Virtual",
-      "date": "2026/05/29"
+      "organization": "Taiwan-France Workshop (IRP e-Light)",
+      "topic": "AI as the Translation Layer for Heterogeneous Biomedical Sensing",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/06/30"
     },
     {
-      "organization": "國科會工程中心｜在宅醫療照護跨域交流會",
-      "topic": "呼吸音AI判讀與遠距照護應用",
-      "place": "Taipei",
-      "date": "2026/05/14"
+      "organization": "國立清華大學電機系｜書報討論",
+      "topic": "AI聽懂情緒了嗎?從準確率到公平性的情緒語音技術",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/04/17"
     },
     {
-      "organization": "臺灣急診醫學會",
-      "topic": "語音辨識在急重症醫療的應用與侷限",
-      "place": "Taipei",
-      "date": "2026/03/20"
+      "organization": "國立陽明交通大學電機所｜論文研討",
+      "topic": "AI時代下情緒語音技術的發展與公平性挑戰",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/04/08"
     },
     {
-      "organization": "Workshop on AI with Data Privacy and Security for Healthcare A*STAR",
-      "topic": "Beyond Accuracy: Reliability of Clinical AI Algorithms",
-      "place": "Singapore",
-      "date": "2026/01/21"
+      "organization": "Tohoku University",
+      "topic": "Multimodal Interaction Modeling: Bias-Aware Emotion Understanding in Interactive Contexts",
+      "place": "Sendai, Japan",
+      "date": "2026/01/16"
     },
     {
-      "organization": "National University of Singapore, School of Computing",
-      "topic": "Advancing AI for Disordered Speech: Assessment, Accessibility, and Articulation",
-      "place": "Singapore",
-      "date": "2026/01/21"
+      "organization": "The Rising Star Women in Engineering Workshop 2025",
+      "topic": "Multimodal Signal Processing for Human-Centered AI",
+      "place": "Taipei, Taiwan",
+      "date": "2025/11/17"
+    },
+    {
+      "organization": "Industrial Technology Research Institute (ITRI)",
+      "topic": "Nuvoton Microcontroller Development, Implementation and Design for Smart Image Recognition",
+      "place": "Hsinchu, Taiwan",
+      "date": "2019/08/22"
     }
   ]
 }
