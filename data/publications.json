@@ -1,0 +1,444 @@
+{
+  "dissertation": [
+    {
+      "sort_order": 1,
+      "title_en": "From Data Resource Impacts to Fairness Realization in Speech Emotion Recognition",
+      "degree_info_en": "National Tsing Hua University, March 2025.",
+      "title_zh": "語音情緒辨識中之資料來源影響與公平性實現",
+      "degree_info_zh": "國立清華大學電機系, 2025年3月",
+      "award_tags": "IEEE Taipei Section Best Doctoral Dissertation Award\nIICM Ph.D. Dissertation Merit Award"
+    }
+  ],
+  "thesis": [
+    {
+      "sort_order": 1,
+      "title_en": "Back-propagation and Convolutional Neural Networks for Arrhythmia Electrocardiogram Classification",
+      "degree_info_en": "National Chung Cheng University, July 2017.",
+      "title_zh": "以倒傳遞及卷積神經網路辨識心律不整心電圖之研究",
+      "degree_info_zh": "國立中正大學電機系, 2017年7月",
+      "award_tags": ""
+    }
+  ],
+  "journal": [
+    {
+      "sort_order": 1,
+      "title": "Only Subsets Matters: The Effect of Dual Fairness Constraints in Speech Emotion Recognition",
+      "url": "#",
+      "authors": "Woan-Shiuan Chien and Chi-Chun Lee",
+      "venue_abbr": "TAFFC",
+      "venue_url": "https://www.computer.org/csdl/journal/ta",
+      "description": "IEEE Transactions on Affective Computing, 2026 (Accepted)",
+      "award_tags": "",
+      "info_tags": "Impact Factor: 9.8 (2024)",
+      "is_new": true
+    },
+    {
+      "sort_order": 2,
+      "title": "Affective Priming in Emotional Annotations and its Effect on Speech Emotion Recognition",
+      "url": "https://doi.org/10.1109/TAFFC.2025.3597034",
+      "authors": "Luz Martinez-Lucas, Ali Salman, Seong-Gyun Leem, Woan-Shiuan Chien , Shreya G. Upadhyay, Chi-Chun Lee and Carlos Busso",
+      "venue_abbr": "TAFFC",
+      "venue_url": "https://www.computer.org/csdl/journal/ta",
+      "description": "IEEE Transactions on Affective Computing, 2025",
+      "award_tags": "",
+      "info_tags": "Impact Factor: 9.8 (2024)",
+      "is_new": false
+    },
+    {
+      "sort_order": 3,
+      "title": "Differential Impacts of Monologue and Conversation on Speech Emotion Recognition",
+      "url": "https://ieeexplore.ieee.org/document/10771725",
+      "authors": "Woan-Shiuan Chien , Shreya G. Upadhyay, Wei-Cheng Lin, Carlos Busso and Chi-Chun Lee",
+      "venue_abbr": "TAFFC",
+      "venue_url": "https://www.computer.org/csdl/journal/ta",
+      "description": "IEEE Transactions on Affective Computing, 2024",
+      "award_tags": "",
+      "info_tags": "Impact Factor: 9.8 (2024)",
+      "is_new": false
+    },
+    {
+      "sort_order": 4,
+      "title": "Learning With Rater-Expanded Label Space to Improve Speech Emotion Recognition",
+      "url": "https://ieeexplore.ieee.org/document/10417135",
+      "authors": "Shreya G. Upadhyay, Woan-Shiuan Chien , Bo-Hao Su, and Chi-Chun Lee",
+      "venue_abbr": "TAFFC",
+      "venue_url": "https://www.computer.org/csdl/journal/ta",
+      "description": "IEEE Transactions on Affective Computing, 2024",
+      "award_tags": "",
+      "info_tags": "Impact Factor: 9.8 (2024)",
+      "is_new": false
+    }
+  ],
+  "conference": [
+    {
+      "sort_order": 1,
+      "title": "Reasoning-driven Tumor Image Synthesis with Anatomical Context",
+      "url": "#",
+      "authors": "Huan-Yu Chen, Woan-Shiuan Chien , Ching-Heng Lin and Chi-Chun Lee",
+      "venue_abbr": "EMBC",
+      "venue_url": "https://embc.embs.org/2026/",
+      "description": "In Proceeding of 48th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC‘26), Toronto, Canada, July 26-30, 2026.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": true
+    },
+    {
+      "sort_order": 2,
+      "title": "Audience-Aware Co-Speech Gesture Generation in Public Speaking via Anticipation Tokens",
+      "url": "#",
+      "authors": "Huan-Yu Chen, Woan-Shiuan Chien and Chi-Chun Lee",
+      "venue_abbr": "ICASSP",
+      "venue_url": "https://2026.ieeeicassp.org/",
+      "description": "In Proceeding of the 51st IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP‘26), Barcelona, Spain, May 4-8, 2026.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": true
+    },
+    {
+      "sort_order": 3,
+      "title": "Rethinking Multilingual and Multimodal Interactive Datasets: Challenges, Limitations and Potentials",
+      "url": "#",
+      "authors": "Woan-Shiuan Chien , Huan-Yu Chen, Shu-Ying Liu, Yuan-Liang An, Ching-Shin Hsiao, Yangyang Cai, Victor Pierre Schneider, Miao Cheng, Chia-Huei Tseng and Chi-Chun Lee",
+      "venue_abbr": "ACII",
+      "venue_url": "https://acii-conf.net/2025/",
+      "description": "In Proceeding of 2025 13th IEEE International Conference on Affective Computing and Intelligent Interaction Workshops and Demos (ACIIW‘25), Canberra, Australia, October 8-11, 2025.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 4,
+      "title": "Graph Structure Learning with Local Connectivity Refinement for Improved Physiological Emotion Recognition",
+      "url": "https://doi.org/10.1109/MLSP62443.2025.11204334",
+      "authors": "Woan-Shiuan Chien , Mei-Yen Tsai and Chi-Chun Lee",
+      "venue_abbr": "MLSP",
+      "venue_url": "https://2025.ieeemlsp.org/en/",
+      "description": "In Proceeding of 2025 IEEE International Workshop on Machine Learning for Signal Processing (MLSP‘25), Istanbul, Turkey, August 31-September 3, 2025.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 5,
+      "title": "Gradient-Aware Data Augmentation for Federated Stress Detection under Data Incompleteness",
+      "url": "https://doi.org/10.1109/EMBC58623.2025.11252844",
+      "authors": "Woan-Shiuan Chien , Huan-Yu Chen and Chi-Chun Lee",
+      "venue_abbr": "EMBC",
+      "venue_url": "https://ieeexplore.ieee.org/document/11252844",
+      "description": "In Proceeding of 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC‘25), Copenhagen, Denmark, July 14-17, 2025.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 6,
+      "title": "Instrument-Aware Representation Learning for Robust Cross-Site Flow Cytometry Integration",
+      "url": "https://doi.org/10.1109/EMBC58623.2025.11254223",
+      "authors": "Huan-Yu Chen, Woan-Shiuan Chien , Yu-Fen Wang, Bor-Sheng Ko and Chi-Chun Lee",
+      "venue_abbr": "EMBC",
+      "venue_url": "https://biomedicalimaging.org/2025/",
+      "description": "In Proceeding of 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC‘25), Copenhagen, Denmark, July 14-17, 2025.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 7,
+      "title": "Leveraging Foundation Models for Clinically Instructed Tumor Image Synthesis in Renal Cell Carcinoma",
+      "url": "https://doi.org/10.1109/ISBI60581.2025.10980760",
+      "authors": "Huan-Yu Chen, Woan-Shiuan Chien , Ching-Heng Lin and Chi-Chun Lee",
+      "venue_abbr": "ISBI",
+      "venue_url": "https://biomedicalimaging.org/2025/",
+      "description": "In Proceeding of the 22nd IEEE International Symposium on Biomedical Imaging (ISBI‘25), Huston, TX, USA, April 14-17, 2025.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 8,
+      "title": "Disentangle Heart Rate Signals for Improved Stress Detection",
+      "url": "https://doi.org/10.1109/ICASSP49660.2025.10888319",
+      "authors": "Pin-Jhao Chen, Woan-Shiuan Chien and Chi-Chun Lee",
+      "venue_abbr": "ICASSP",
+      "venue_url": "https://2025.ieeeicassp.org/",
+      "description": "In Proceeding of the 50th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP‘25), Hyderabad, India, April 6-11, 2025.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 9,
+      "title": "A Dynamic Edge-Selection Mechanism in HRV Hypergraph Learning for Improved Stress Detection",
+      "url": "https://doi.org/10.1109/ICASSP49660.2025.10890191",
+      "authors": "Jing-Chun Wang, Woan-Shiuan Chien and Chi-Chun Lee",
+      "venue_abbr": "ICASSP",
+      "venue_url": "https://2025.ieeeicassp.org/",
+      "description": "In Proceeding of the 50th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP‘25), Hyderabad, India, April 6-11, 2025.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 10,
+      "title": "Is It Still Fair? Investigating Gender Fairness in Cross-Corpus Speech Emotion Recognition",
+      "url": "https://doi.org/10.1109/ICASSP49660.2025.10889760",
+      "authors": "Shreya G. Upadhyay, Woan-Shiuan Chien and Chi-Chun Lee",
+      "venue_abbr": "ICASSP",
+      "venue_url": "https://2025.ieeeicassp.org/",
+      "description": "In Proceeding of the 50th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP‘25), Hyderabad, India, April 6-11, 2025.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 11,
+      "title": "Understanding Missing Data Bias in Longitudinal Mental Stress Detection",
+      "url": "https://doi.org/10.1109/BSN63547.2024.10780500",
+      "authors": "Woan-Shiuan Chien and Chi-Chun Lee",
+      "venue_abbr": "BSN",
+      "venue_url": "https://bsn.embs.org/2024/",
+      "description": "In Proceedings of IEEE 21st International Conference on Body Sensor Networks (BSN‘24), Chigago, USA, Oct 15-17, 2024.",
+      "award_tags": "IEEE EMBS BSN Travel Awards",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 12,
+      "title": "Stress Detection Using HRV Features Augmentation Based on Heart Rate Signal Transformation",
+      "url": "https://doi.org/10.1109/BSN63547.2024.10780687",
+      "authors": "Pin-Jhao Chen, Woan-Shiuan Chien , Huan-Yu Chen, and Chi-Chun Lee",
+      "venue_abbr": "BSN",
+      "venue_url": "https://bsn.embs.org/2024/",
+      "description": "In Proceedings of IEEE 21st International Conference on Body Sensor Networks (BSN‘24), Chigago, USA, Oct 15-17, 2024.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 13,
+      "title": "In-The-Wild HRV-Based Stress Detection Using Individual-Aware Metric Learning",
+      "url": "https://doi.org/10.1109/BSN63547.2024.10780546",
+      "authors": "Jing-Chun Wang, Woan-Shiuan Chien , Huan-Yu Chen, and Chi-Chun Lee",
+      "venue_abbr": "BSN",
+      "venue_url": "https://bsn.embs.org/2024/",
+      "description": "In Proceedings of IEEE 21st International Conference on Body Sensor Networks (BSN‘24), Chigago, USA, Oct 15-17, 2024.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 14,
+      "title": "An Investigation of Group versus Individual Fairness in Perceptually Fair Speech Emotion Recognition",
+      "url": "https://doi.org/10.21437/Interspeech.2024-461",
+      "authors": "Woan-Shiuan Chien and Chi-Chun Lee",
+      "venue_abbr": "Interspeech",
+      "venue_url": "https://interspeech2024.org/",
+      "description": "In Proceeding of Conference of the International Speech Communication Association (Interspeech‘24), Kos Island, Greece, Sep 1-5, 2024.",
+      "award_tags": "Google Conference Scholarship",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 15,
+      "title": "An Inter-Speaker Fairness-Aware Speech Emotion Regression Framework",
+      "url": "https://doi.org/10.21437/Interspeech.2024-471",
+      "authors": "Hsing-Hang Chou, Woan-Shiuan Chien , Ya-Tse Wu and Chi-Chun Lee",
+      "venue_abbr": "Interspeech",
+      "venue_url": "https://interspeech2024.org/",
+      "description": "In Proceeding of Conference of the International Speech Communication Association (Interspeech‘24), Kos Island, Greece, Sep 1-5, 2024.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 16,
+      "title": "Balancing Speaker-Rater Fairness for Gender-Neutral Speech Emotion Recognition",
+      "url": "https://doi.org/10.1109/ICASSP48485.2024.10447167",
+      "authors": "Woan-Shiuan Chien , Shreya G. Upadhyay and Chi-Chun Lee",
+      "venue_abbr": "ICASSP",
+      "venue_url": "https://2024.ieeeicassp.org/",
+      "description": "In Proceeding of the 49th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP’24), Seoul, Korea, April 14-19, 2024.",
+      "award_tags": "ACLCLP Outstanding Students Conference Travel Grant\nMerry Electroacoustic Thesis Award Finalist",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 17,
+      "title": "In-The-Wild Physiological-Based Stress Detection Using Federated Strategy",
+      "url": "https://doi.org/10.1109/ICASSP48485.2024.10446004",
+      "authors": "Po-Chen Lin, Jeng-Lin Li, Woan-Shiuan Chien and Chi-Chun Lee",
+      "venue_abbr": "ICASSP",
+      "venue_url": "https://2024.ieeeicassp.org/",
+      "description": "In Proceeding of the 49th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP’24), Seoul, Korea, April 14-19, 2024.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 18,
+      "title": "An Intelligent Infrastructure Toward Large Scale Naturalistic Affective Speech Corpora Collection",
+      "url": "https://doi.org/10.1109/ACII59096.2023.10388175",
+      "authors": "Shreya G. Upadhyay*, Woan-Shiuan Chien* , Bo-Hao Su, Lucas Goncalves, Ya-Tse Wu, Ali N. Salman, Carlos Busso and Chi-Chun Lee",
+      "venue_abbr": "ACII",
+      "venue_url": "https://acii-conf.net/2023/",
+      "description": "In Proceeding of the 11th International Conference on Affective Computing & Intelligent Interaction (ACII ‘23), 2023",
+      "award_tags": "AAAC ACII 2023 Travel Bursary",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 19,
+      "title": "Achieving Fair Speech Emotion Recognition via Perceptual Fairness",
+      "url": "https://doi.org/10.1109/ICASSP49357.2023.10094984",
+      "authors": "Woan-Shiuan Chien and Chi-Chun Lee",
+      "venue_abbr": "ICASSP",
+      "venue_url": "https://2023.ieeeicassp.org/",
+      "description": "In Proceeding of the 48th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP’23), Rhodes Island, Greece, June 4-10, 2023.",
+      "award_tags": "IEEE SPS ICASSP Travel Grant\nIEEE PROGRESS Student Travel Awards\nGoogle Conference Scholarship\nACLCLP Outstanding Students Conference Travel Grant",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 20,
+      "title": "Phonetic Anchor-Based Transfer Learning To Facilitate Unsupervised Cross-Lingual Speech Emotion Recognition",
+      "url": "https://doi.org/10.1109/ICASSP49357.2023.10095250",
+      "authors": "Shreya G. Upadhyay, Luz Martinez-Lucas, Bo-Hao Su, Wei-Cheng Lin, Woan-Shiuan Chien , Ya-Tse Wu, William Katz, Carlos Busso and Chi-Chun Lee",
+      "venue_abbr": "ICASSP",
+      "venue_url": "https://2023.ieeeicassp.org/",
+      "description": "In Proceeding of the 48th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP’23), Rhodes Island, Greece, June 4-10, 2023.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 21,
+      "title": "Monologue versus Conversation: Differences in Emotion Perception and Acoustic Expressivity",
+      "url": "https://doi.org/10.1109/ACII55700.2022.9953814",
+      "authors": "Woan-Shiuan Chien , Shreya G. Upadhyay, Wei-Cheng Lin, Ya-Tse Wu, Bo-Hao Su, Carlos Busso and Chi-Chun Lee",
+      "venue_abbr": "ACII",
+      "venue_url": "https://acii-conf.net/2022/",
+      "description": "In Proceeding of the 10th International Conference on Affective Computing & Intelligent Interaction (ACII’22), Hybrid Event / Nara, Japan, October 18-21, 2022.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 22,
+      "title": "Self-assessed Emotion Classification from Acoustic and Physiological Features within Small-group Conversation",
+      "url": "https://doi.org/10.1145/3461615.348541",
+      "authors": "Woan-Shiuan Chien , Huang-Cheng Chou and Chi-Chun Lee",
+      "venue_abbr": "ICMI",
+      "venue_url": "https://icmi.acm.org/2021/",
+      "description": "In Companion Publication of the 23rd ACM International Conference on Multimodal Interaction (ICMI’21), Hybrid Event / Montreal, Canada, October 18-22, 2021.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 23,
+      "title": "Belongingness and Satisfaction Recognition from Physiological Synchrony with A Group-Modulated Attentive BLSTM under Small-group Conversation",
+      "url": "https://doi.org/10.1145/3461615.3485410",
+      "authors": "Woan-Shiuan Chien , Huang-Cheng Chou and Chi-Chun Lee",
+      "venue_abbr": "ICMI",
+      "venue_url": "https://icmi.acm.org/2021/",
+      "description": "In Companion Publication of the 23rd ACM International Conference on Multimodal Interaction (ICMI’21), Hybrid Event / Montreal, Canada, October 18-22, 2021.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 24,
+      "title": "“Does it Matter When I Think You Are Lying?” Improving Deception Detection by Integrating Interlocutor’s Judgements in Conversations",
+      "url": "https://doi.org/10.18653/v1/2021.findings-acl.162",
+      "authors": "Huang-Cheng Chou, Woan-Shiuan Chien , Da-Cheng Juan and Chi-Chun Lee",
+      "venue_abbr": "ACL",
+      "venue_url": "https://2021.aclweb.org/",
+      "description": "In Findings of the Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL-IJCNLP’21), Virtual Event / Bangkok, Thailand, August 1-6, 2021.",
+      "award_tags": "Merry Electroacoustic Thesis Award",
+      "info_tags": "",
+      "is_new": false
+    },
+    {
+      "sort_order": 25,
+      "title": "Cross Corpus Physiological-based Emotion Recognition Using a Learnable Visual Semantic Graph Convolutional Network",
+      "url": "https://doi.org/10.1145/3394171.3413552",
+      "authors": "Woan-Shiuan Chien , Hao-Chun Yang and Chi-Chun Lee",
+      "venue_abbr": "ACMMM",
+      "venue_url": "https://2020.acmmm.org/",
+      "description": "In Proceedings of the 25th ACM International Conference on Multimedia (MM’20), Virtual Event / Seattle, USA, October 12-16, 2020.",
+      "award_tags": "",
+      "info_tags": "Acceptance rate: 27.8%",
+      "is_new": false
+    },
+    {
+      "sort_order": 26,
+      "title": "Identification of Myocardial Ischemic and Infarction Episodes Based on ST Level and Beat Type Re-attribution Method",
+      "url": "https://doi.org/10.1145/3133793.3133807",
+      "authors": "Woan-Shiuan Chien and Sung-Nien Yu",
+      "venue_abbr": "ICBIP",
+      "venue_url": "https://www.icbip.org/icbip2017.html",
+      "description": "In Proceedings of the 2nd International Conference on Biomedical Signal and Image Processing (ICBIP’17), Kitakyushu, Japan, August 23-25, 2017.",
+      "award_tags": "",
+      "info_tags": "",
+      "is_new": false
+    }
+  ],
+  "patnts": [
+    {
+      "sort_order": 1,
+      "group": "US Patents",
+      "title": "Method, Model Training Method and Computer Program Product for Speech Emotion Recognition",
+      "url": "#",
+      "authors": "Woan-Shiuan Chien and Chi-Chun Lee",
+      "description": "Patent App. US (issued XX XX, 2025)"
+    },
+    {
+      "sort_order": 2,
+      "group": "US Patents",
+      "title": "Recognition System and Recognition Method",
+      "url": "#",
+      "authors": "Woan-Shiuan Chien and Tzu-Lan Shen",
+      "description": "Patent App. US11216729 (issued Jan 4, 2022)"
+    },
+    {
+      "sort_order": 3,
+      "group": "TW Patents",
+      "title": "基於心血管生理訊號的壓力檢測方法與系統",
+      "url": "#",
+      "authors": "陳品肇, 簡婉軒 , 李祈均",
+      "description": "Patent App. TWI859906 (issued Jan XX, 2026)"
+    },
+    {
+      "sort_order": 4,
+      "group": "TW Patents",
+      "title": "基於聯邦學習的模型訓練方法與系統",
+      "url": "#",
+      "authors": "林柏辰, 李政霖, 簡婉軒 , 李祈均",
+      "description": "Patent App. TWI910914 (issued Jan 1, 2026)"
+    },
+    {
+      "sort_order": 5,
+      "group": "TW Patents",
+      "title": "語音情緒的辨識方法、模型訓練方法與電腦程式產品",
+      "url": "#",
+      "authors": "簡婉軒 , 李祈均",
+      "description": "Patent App. TWI859906 (issued Oct 21, 2024)"
+    },
+    {
+      "sort_order": 6,
+      "group": "TW Patents",
+      "title": "微控制器更新系統和方法",
+      "url": "#",
+      "authors": "簡婉軒",
+      "description": "Patent App. TWI780382 (issued Oct 11, 2022)"
+    },
+    {
+      "sort_order": 7,
+      "group": "TW Patents",
+      "title": "辨識系統及辨識方法",
+      "url": "#",
+      "authors": "簡婉軒 , 沈子嵐",
+      "description": "TW Patent App. TW1682325 (issued Jan 11, 2020)"
+    }
+  ]
+}
