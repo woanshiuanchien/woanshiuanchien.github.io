@@ -283,3 +283,30 @@
     border-radius: 12px;
   }
 }
+
+/* ---------- Publication page: preserve original hand-coded appearance ---------- */
+.bibliography .title b,
+.bibliography .title strong {
+  font-weight: 700;
+}
+
+.pub-new-badge {
+  height: 20px !important;
+  width: auto !important;
+  margin-left: 6px;
+  vertical-align: text-bottom;
+}
+
+.bibliography .badge a,
+.bibliography .badge a:hover,
+.bibliography .badge a:active,
+.bibliography .badge a:focus {
+  color: var(--site-muted-purple);
+  text-decoration: none !important;
+}
+
+.bibliography code {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+}
