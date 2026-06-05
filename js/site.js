@@ -15,6 +15,14 @@
     ]
   };
 
+  const categoryTitles = {
+    dissertation: "PhD Dissertation",
+    thesis: "MS Thesis",
+    journal: "International Journal",
+    conference: "International Conference",
+    patent: "Patents"
+  };
+
   function escapeHtml(value) {
     return String(value || "")
       .replace(/&/g, "&amp;")
@@ -31,6 +39,7 @@
 
   function path(root, value) {
     root = normalizeRoot(root);
+    if (!value) return "";
     if (/^https?:\/\//.test(value) || value.startsWith("mailto:")) return value;
     if (!root) return value;
     return `${root}/${value.replace(/^\//, "")}`;
@@ -101,56 +110,87 @@
       .replace(/簡婉軒/g, "<strong><u>簡婉軒</u></strong>");
   }
 
-  function titleHtml(item) {
-    const title = escapeHtml(item.title);
-    const newBadge = item.is_new ? `<img src="../images/New.png" title="new" height="20" draggable="false" class="pub-new-badge animated flash infinite" alt="New">` : "";
-    if (item.url) {
-      return `<a class="a2 pub-title-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${title}</a>${newBadge}`;
-    }
-    return `${title}${newBadge}`;
+  function normaliseLocalHref(href) {
+    if (!href) return "";
+    if (/^https?:\/\//.test(href)) return href;
+    return `../${href.replace(/^\.\.\//, "").replace(/^\//, "")}`;
   }
 
-  function venueHtml(item) {
+  function titleHtml(item) {
+    const title = escapeHtml(item.title);
+    const titleContent = `<strong>${title}</strong>`;
+    const href = item.url || item.pdf || "";
+    const titleNode = href
+      ? `<a class="a2 pub-title-link" href="${escapeHtml(normaliseLocalHref(href))}" target="_blank" rel="noopener">${titleContent}</a>`
+      : `<span class="pub-title-text">${titleContent}</span>`;
+    const newBadge = item.is_new ? `<span class="pub-new-text">NEW</span>` : "";
+    return `${titleNode}${newBadge}`;
+  }
+
+  function codeBadge(text, className) {
+    if (!text) return "";
+    return `<code class="${className}">${escapeHtml(text)}</code>`;
+  }
+
+  function badgeHtml(item, className) {
+    if (!Array.isArray(item.badges) || item.badges.length === 0) return "";
+    return item.badges.map(badge => codeBadge(badge, className)).join(" ");
+  }
+
+  function venueCode(item) {
     if (!item.venue) return "";
     const venue = escapeHtml(item.venue);
     if (item.venue_url) {
-      return `<a class="pub-venue" href="${escapeHtml(item.venue_url)}" target="_blank" rel="noopener">${venue}</a>`;
+      return `<a class="pub-venue-link" href="${escapeHtml(item.venue_url)}" target="_blank" rel="noopener"><code class="pub-venue-code">${venue}</code></a>`;
     }
-    return `<span class="pub-venue">${venue}</span>`;
-  }
-
-  function linksHtml(item) {
-    const links = [];
-    if (item.url) links.push(`<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">Link</a>`);
-    if (item.pdf) links.push(`<a href="../${escapeHtml(item.pdf)}" target="_blank" rel="noopener">PDF</a>`);
-    if (!links.length) return "";
-    return `<div class="pub-links">${links.join("")}</div>`;
-  }
-
-  function badgeHtml(item) {
-    if (!Array.isArray(item.badges) || item.badges.length === 0) return "";
-    return `<div class="pub-badges">${item.badges.map(badge => `<code>${escapeHtml(badge)}</code>`).join("")}</div>`;
+    return `<code class="pub-venue-code">${venue}</code>`;
   }
 
   function publicationItem(item) {
-    const venue = venueHtml(item);
+    const venue = venueCode(item);
     const details = item.details ? `<em>${escapeHtml(item.details)}</em>` : "";
+    const badges = badgeHtml(item, "pub-info-code");
+    const metaParts = [venue, details, badges].filter(Boolean).join(" ");
     return `
       <li class="pub-item" id="${escapeHtml(item.id)}">
-        <div class="pub-title"><strong>${titleHtml(item)}</strong></div>
+        <div class="pub-title">${titleHtml(item)}</div>
         ${item.authors ? `<div class="pub-authors">${formatAuthors(item.authors)}</div>` : ""}
-        <div class="pub-meta">${venue}${venue && details ? " " : ""}${details}</div>
-        ${badgeHtml(item)}
-        ${linksHtml(item)}
+        ${metaParts ? `<div class="pub-meta">${metaParts}</div>` : ""}
       </li>
     `;
   }
 
-  function renderList(container, title, items) {
+  function renderPublicationList(container, title, items) {
     if (!items.length) return;
     container.insertAdjacentHTML("beforeend", `
       <h2 class="colorlib-heading animate-box">${title}</h2>
       <ol class="bibliography pub-list">${items.map(publicationItem).join("")}</ol>
+    `);
+  }
+
+  function renderDegreeItem(item) {
+    const title = escapeHtml(item.title);
+    const venue = escapeHtml(item.venue);
+    const date = escapeHtml(item.date || item.year || "");
+    const degreeLine = `"<strong>${title}</strong>"${venue ? `, ${venue}` : ""}${date ? `, ${date}.` : ""}`;
+    const zh = item.title_zh || item.details ? `<p class="degree-zh">${escapeHtml(item.title_zh || item.details)}</p>` : "";
+    const details = item.title_zh && item.details ? `<p class="degree-zh">${escapeHtml(item.details)}</p>` : "";
+    const awards = badgeHtml(item, "degree-award-code");
+    return `
+      <div class="degree-item" id="${escapeHtml(item.id)}">
+        <p class="degree-main">${degreeLine}</p>
+        ${zh}
+        ${details}
+        ${awards ? `<p class="degree-awards">${awards}</p>` : ""}
+      </div>
+    `;
+  }
+
+  function renderDegreeSection(container, title, items) {
+    if (!items.length) return;
+    container.insertAdjacentHTML("beforeend", `
+      <h2 class="colorlib-heading animate-box">${title}</h2>
+      <div class="degree-list">${items.map(renderDegreeItem).join("")}</div>
     `);
   }
 
@@ -171,18 +211,28 @@
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const items = await response.json();
 
-      const byCategory = category => items.filter(item => item.category === category);
-      renderList(container, "PhD Dissertation", byCategory("dissertation"));
-      renderList(container, "MS Thesis", byCategory("thesis"));
-      renderList(container, "International Journal", byCategory("journal"));
-      renderList(container, "International Conference", byCategory("conference"));
+      const byCategory = category => items.filter(item => item.category === category)
+        .sort((a, b) => (Number(a.sort_order) || 9999) - (Number(b.sort_order) || 9999));
+
+      renderDegreeSection(container, categoryTitles.dissertation, byCategory("dissertation"));
+      renderDegreeSection(container, categoryTitles.thesis, byCategory("thesis"));
+      renderPublicationList(container, categoryTitles.journal, byCategory("journal"));
+      renderPublicationList(container, categoryTitles.conference, byCategory("conference"));
 
       const patents = byCategory("patent");
       if (patents.length) {
-        container.insertAdjacentHTML("beforeend", `<h2 class="colorlib-heading animate-box">Patents</h2>`);
+        container.insertAdjacentHTML("beforeend", `<h2 class="colorlib-heading animate-box">${categoryTitles.patent}</h2>`);
         let start = 1;
-        start += renderPatentList(container, "US Patents", patents.filter(item => item.group === "US Patents"), start);
-        renderPatentList(container, "TW Patents", patents.filter(item => item.group === "TW Patents"), start);
+        const groups = [...new Set(patents.map(item => item.group).filter(Boolean))];
+        if (groups.length) {
+          groups.forEach(group => {
+            start += renderPatentList(container, group, patents.filter(item => item.group === group), start);
+          });
+          const ungrouped = patents.filter(item => !item.group);
+          if (ungrouped.length) renderPatentList(container, "Other Patents", ungrouped, start);
+        } else {
+          renderPatentList(container, "", patents, start);
+        }
       }
     } catch (error) {
       container.innerHTML = `
