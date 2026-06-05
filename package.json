@@ -1,0 +1,10 @@
+{
+  "name": "woanshiuanchien-github-io",
+  "private": true,
+  "scripts": {
+    "build:publications": "node scripts/build-publications-json.js"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
