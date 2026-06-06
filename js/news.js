@@ -3,7 +3,7 @@
 
   var root = document.body.getAttribute('data-root') || '';
   var dataPath = root + 'data/news.json';
-  var activeCategory = 'All';
+  var activeCategory = 'Research Spotlight';
   var expanded = false;
   var initialLimit = 8;
   var newsData = { categories: [], items: [] };
