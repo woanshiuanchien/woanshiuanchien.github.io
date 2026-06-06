@@ -310,3 +310,117 @@
   margin-left: 4px;
   margin-right: 4px;
 }
+
+/* ---------- Publication page: compact conference venue statistics ---------- */
+.conference-venue-stats {
+  margin: -18px 0 24px 0;
+}
+
+.venue-stat-card {
+  display: block;
+  width: 100%;
+  padding: 12px 14px 11px 14px;
+  border: 1px dashed rgba(108, 80, 112, 0.35);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(252, 219, 166, 0.30), rgba(255, 255, 255, 0.92));
+  box-shadow: 0 6px 18px rgba(108, 80, 112, 0.06);
+}
+
+.venue-stat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.venue-stat-kicker {
+  color: var(--site-accent);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.venue-stat-kicker::before {
+  content: "✦";
+  color: var(--site-badge-yellow);
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.venue-stat-total {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--site-accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.venue-stat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.venue-stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px 4px 9px;
+  border: 1px solid rgba(108, 80, 112, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  line-height: 1;
+  transition: all 0.25s ease;
+}
+
+.venue-stat-chip:hover {
+  transform: translateY(-1px);
+  border-color: var(--site-badge-yellow);
+  background: #fffaf1;
+}
+
+.venue-stat-name {
+  color: var(--site-muted-purple);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.venue-stat-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--site-badge-yellow);
+  color: var(--site-muted-purple);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .conference-venue-stats {
+    margin-top: -10px;
+  }
+
+  .venue-stat-card {
+    padding: 11px 12px;
+  }
+
+  .venue-stat-chip {
+    padding: 4px 7px;
+  }
+}
