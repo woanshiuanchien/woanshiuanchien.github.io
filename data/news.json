@@ -1,0 +1,98 @@
+{
+  "categories": [
+    "Research Spotlight",
+    "Faculty Honor",
+    "Student Honor",
+    "Talk"
+  ],
+  "items": [
+    {
+      "category": "Faculty Honor",
+      "sort_order": 1,
+      "date": "2026/02",
+      "icon": "🏫",
+      "prefix": "Appointed as Assistant Professor at the",
+      "link_text": "Institute of Electrical and Computer Engineering, NYCU",
+      "link_url": "https://iece.dee.nycu.edu.tw/teachers.php?pa=getItem&teacher_id=524&locale=tw",
+      "suffix": ".",
+      "is_visible": true
+    },
+    {
+      "category": "Talk",
+      "sort_order": 2,
+      "date": "2026/01",
+      "icon": "🎤",
+      "prefix": "Invited talk",
+      "link_text": "Multimodal Interaction Modeling: Bias-Aware Emotion Understanding in Interactive Contexts",
+      "link_url": "https://www.cr-ict.riec.tohoku.ac.jp/archives/941",
+      "suffix": "at Tohoku University, Sendai, Japan.",
+      "is_visible": true
+    },
+    {
+      "category": "Faculty Honor",
+      "sort_order": 3,
+      "date": "2025/11",
+      "icon": "🏆",
+      "prefix": "PhD milestone unlocked! Received the",
+      "link_text": "IEEE Taipei Section Best Doctoral Dissertation Award",
+      "link_url": "https://ieee.org.tw/%F0%9F%8E%89%E8%B3%80%E6%A6%9C%F0%9F%8E%89-2025-%E5%B9%B4-ieee-taipei-section-%E7%A2%A9%E5%8D%9A%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E-%E7%8D%B2%E7%8D%8E%E5%85%AC%E5%91%8A/",
+      "suffix": "🥳",
+      "is_visible": true
+    },
+    {
+      "category": "Faculty Honor",
+      "sort_order": 4,
+      "date": "2025/11",
+      "icon": "💬",
+      "prefix": "Shortlisted participant for",
+      "link_text": "The Rising Stars Women in Engineering Workshop 2025",
+      "link_url": "https://risingstarsasia.org/index.php",
+      "suffix": "National Taiwan University, Taiwan.",
+      "is_visible": true
+    },
+    {
+      "category": "Faculty Honor",
+      "sort_order": 5,
+      "date": "2025/09",
+      "icon": "🏅",
+      "prefix": "Honored to be awarded as a Tsing Hua Postdoctoral Research Fellow at National Tsing Hua University!!",
+      "link_text": "",
+      "link_url": "",
+      "suffix": "",
+      "is_visible": true
+    },
+    {
+      "category": "Research Spotlight",
+      "sort_order": 6,
+      "date": "2025/06",
+      "icon": "🎉",
+      "prefix": "Organized the tutorial",
+      "link_text": "Understanding and Mitigating Bias in Emotion Recognition Systems",
+      "link_url": "https://woanshiuanchien.github.io/bias-in-emotion-recognition-system/",
+      "suffix": "at IEEE ACII 2025 in Canberra, Australia!!",
+      "is_visible": true
+    },
+    {
+      "category": "Faculty Honor",
+      "sort_order": 7,
+      "date": "2025/04",
+      "icon": "🚀",
+      "prefix": "Started my new journey as a Postdoctoral Researcher at National Tsing Hua University 🦉",
+      "link_text": "",
+      "link_url": "",
+      "suffix": "",
+      "is_visible": true
+    },
+    {
+      "category": "Faculty Honor",
+      "sort_order": 8,
+      "date": "2025/03",
+      "icon": "🎓",
+      "prefix": "Successfully defended my PhD dissertation — now officially Dr. Chien!!! 🥳",
+      "link_text": "",
+      "link_url": "",
+      "suffix": "",
+      "is_visible": true
+    }
+  ]
+}
