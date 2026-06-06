@@ -170,6 +170,49 @@
     ].join('\n');
   }
 
+  function renderConferenceVenueStats(containerId, items) {
+    var container = document.getElementById(containerId);
+    if (!container) return;
+
+    var counts = {};
+    var total = 0;
+
+    (items || []).forEach(function (item) {
+      var venue = hasValue(item.venue_abbr) ? String(item.venue_abbr).trim() : 'Other';
+      counts[venue] = (counts[venue] || 0) + 1;
+      total += 1;
+    });
+
+    var venues = Object.keys(counts).sort(function (a, b) {
+      if (counts[b] !== counts[a]) return counts[b] - counts[a];
+      return a.localeCompare(b);
+    });
+
+    if (!venues.length) {
+      container.innerHTML = '';
+      return;
+    }
+
+    var chipsHtml = venues.map(function (venue) {
+      return [
+        '<span class="venue-stat-chip" title="' + escapeHtml(venue) + ': ' + counts[venue] + ' paper' + (counts[venue] > 1 ? 's' : '') + '">',
+        '<span class="venue-stat-name">' + escapeHtml(venue) + '</span>',
+        '<span class="venue-stat-count">' + counts[venue] + '</span>',
+        '</span>'
+      ].join('');
+    }).join('');
+
+    container.innerHTML = [
+      '<div class="venue-stat-card">',
+      '<div class="venue-stat-header">',
+      '<span class="venue-stat-kicker">Venue snapshot</span>',
+      '<span class="venue-stat-total">' + total + ' conference papers</span>',
+      '</div>',
+      '<div class="venue-stat-chips">' + chipsHtml + '</div>',
+      '</div>'
+    ].join('');
+  }
+
   function renderPatentItem(item) {
     var titleHtml = makeTitleLink(item.title, item.url);
     var authorsHtml = hasValue(item.authors) ? renderAuthors(item.authors) : '';
@@ -229,6 +272,7 @@
     renderDegreeSection('publication-dissertation', data.dissertation || []);
     renderDegreeSection('publication-thesis', data.thesis || []);
     renderPaperList('publication-journal', data.journal || []);
+    renderConferenceVenueStats('conference-venue-stats', data.conference || []);
     renderPaperList('publication-conference', data.conference || []);
     renderPatents('publication-patnts', data.patnts || []);
   }
