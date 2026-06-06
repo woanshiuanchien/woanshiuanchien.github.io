@@ -38,15 +38,15 @@
     });
   }
 
-  function getCategoryIcon(category) {
+  function getCategoryIconHtml(category) {
     var icons = {
-      'All': '☰',
-      'Research Spotlight': '✦',
-      'Faculty Honor': '🏆',
-      'Student Honor': '🌱',
-      'Talk': '🎤'
+      'All': '<i class="fa-solid fa-bars" aria-hidden="true"></i>',
+      'Research Spotlight': '<i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>',
+      'Faculty Honor': '<i class="fa-solid fa-award" aria-hidden="true"></i>',
+      'Student Honor': '<i class="fa-solid fa-seedling" aria-hidden="true"></i>',
+      'Talk': '<i class="fa-solid fa-microphone-lines" aria-hidden="true"></i>'
     };
-    return icons[category] || '•';
+    return icons[category] || '<i class="fa-solid fa-circle" aria-hidden="true"></i>';
   }
 
   function buildNewsText(item) {
@@ -55,7 +55,7 @@
     }
 
     var icon = hasValue(item.icon) ? escapeHtml(item.icon) + ' ' : '';
-    var date = hasValue(item.date) ? '<strong>' + escapeHtml(item.date) + ':</strong> ' : '';
+    var date = hasValue(item.date) ? '<span class="news-date">' + escapeHtml(item.date) + ':</span> ' : '';
     var prefix = hasValue(item.prefix) ? escapeHtml(item.prefix).trim() : '';
     var suffix = hasValue(item.suffix) ? escapeHtml(item.suffix).trim() : '';
     var link = '';
@@ -95,7 +95,7 @@
     container.innerHTML = categories.map(function (category) {
       var active = category === activeCategory ? ' active' : '';
       return '<button type="button" class="news-tab' + active + '" data-category="' + escapeHtml(category) + '">' +
-        '<span class="news-tab-icon">' + escapeHtml(getCategoryIcon(category)) + '</span> ' + escapeHtml(category) +
+        '<span class="news-tab-icon">' + getCategoryIconHtml(category) + '</span><span class="news-tab-label">' + escapeHtml(category) + '</span>' +
         '</button>';
     }).join('');
 
