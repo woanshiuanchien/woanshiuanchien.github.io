@@ -424,3 +424,182 @@
     padding: 4px 7px;
   }
 }
+
+
+/* ---------- Home page: prospective students card ---------- */
+.student-recruit-card {
+  display: block;
+  width: 100%;
+  margin: 18px 0 22px 0;
+  padding: 15px 17px 14px 17px;
+  border: 1px dashed rgba(108, 80, 112, 0.35);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(252, 219, 166, 0.32), rgba(255, 255, 255, 0.94));
+  box-shadow: 0 6px 18px rgba(108, 80, 112, 0.06);
+}
+
+.student-recruit-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.student-recruit-kicker {
+  color: var(--site-alert-red);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.student-recruit-kicker::before {
+  content: "📢";
+  color: var(--site-alert-red);
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.student-recruit-total {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--site-accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.student-recruit-card p {
+  margin: 0;
+  color: var(--site-text-muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* ---------- Home page: Excel/JSON-driven news ---------- */
+.news-section-title {
+  color: #000;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.news-widget {
+  width: 100%;
+}
+
+.news-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 20px 0;
+}
+
+.news-tab {
+  border: 0;
+  background: transparent;
+  color: #0066cc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 17px;
+  line-height: 1.2;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.news-tab:hover,
+.news-tab:focus {
+  color: #fff;
+  background: var(--site-accent);
+  outline: none;
+}
+
+.news-tab.active {
+  color: #fff;
+  background: #1976D2;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.18);
+}
+
+.news-list {
+  margin: 0;
+  padding-left: 22px;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.news-list li {
+  margin-bottom: 4px;
+}
+
+.news-list a {
+  color: #0066cc;
+  border-bottom: solid 1px rgba(0, 102, 204, 0.35);
+}
+
+.news-list a:hover,
+.news-list a:focus,
+.news-list a:active {
+  color: var(--site-accent-dark);
+  border-bottom-color: var(--site-accent-dark);
+}
+
+.news-empty {
+  list-style: none;
+  margin-left: -22px;
+  color: #777;
+  font-style: italic;
+}
+
+.news-more-wrap {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.news-more-button {
+  border: 0;
+  background: transparent;
+  color: var(--site-accent-dark);
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.news-more-button:hover,
+.news-more-button:focus {
+  color: var(--site-accent);
+  outline: none;
+  text-decoration: underline;
+}
+
+.news-more-button.is-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .student-recruit-card {
+    padding: 13px 14px;
+  }
+
+  .student-recruit-card p,
+  .news-list,
+  .news-tab {
+    font-size: 16px;
+  }
+
+  .news-section-title {
+    font-size: 25px;
+  }
+}
