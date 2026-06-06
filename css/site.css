@@ -600,7 +600,7 @@
 .news-more-button {
   border: 0;
   background: transparent;
-  color: var(--site-accent-dark);
+  color: var(--site-badge-yellow);
   font-size: 20px;
   line-height: 1.2;
   padding: 4px 12px;
