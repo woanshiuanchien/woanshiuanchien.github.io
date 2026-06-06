@@ -526,7 +526,7 @@
 
 .news-tab.active {
   color: #fff;
-  background: #1976D2;
+  background: var(--site-accent-dark);
   box-shadow: 0 4px 12px rgba(25, 118, 210, 0.18);
 }
 
@@ -543,7 +543,7 @@
 }
 
 .news-list a {
-  color: #0066cc;
+  color: var(--site-accent);
   border-bottom: solid 1px rgba(0, 102, 204, 0.35);
 }
 
