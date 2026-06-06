@@ -519,9 +519,9 @@
 
 .news-tab:hover,
 .news-tab:focus {
-  color: #fff;
-  background: var(--site-accent-dark);
-  border-color: var(--site-accent-dark);
+  color: var(--site-accent-dark);
+  background: var(--site-badge-yellow);
+  border-color: var(--site-badge-yellow);
   outline: none;
 }
 
@@ -535,8 +535,8 @@
 .news-tab.active:hover,
 .news-tab.active:focus {
   color: #fff;
-  background: var(--site-accent-dark);
-  border-color: var(--site-accent-dark);
+  background: var(--site-accent);
+  border-color: var(--site-accent);
   outline: none;
 }
 
