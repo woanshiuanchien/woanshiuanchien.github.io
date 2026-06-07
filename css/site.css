@@ -410,6 +410,9 @@
   display: inline-block;
   margin-left: 4px;
   margin-right: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 1px 4px;
 }
 
 /* ---------- Publication page: compact conference venue statistics ---------- */
@@ -734,4 +737,234 @@
   .news-section-title {
     font-size: 25px;
   }
+}
+
+
+/* ---------- Global heading typography ---------- */
+h1, h2, h3, h4, h5, h6,
+.colorlib-heading,
+.research-section-title,
+.topic-title,
+.services h3,
+.services .desc h3,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+  font-family: 'DM Serif Text', serif !important;
+}
+
+/* ---------- Research page: topic service cards ---------- */
+.research-topic-services {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.research-topic-services .services {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 16px;
+  padding: 1.55em 1.35em 1.4em 1.35em;
+  margin-bottom: 70px;
+  box-shadow: 0 10px 28px rgba(108, 80, 112, 0.08);
+}
+
+.research-topic-services .services .desc {
+  height: auto;
+  min-height: 300px;
+  margin-top: 70px;
+}
+
+.research-topic-services .services .desc h3 {
+  color: var(--site-accent-dark);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-transform: none;
+  margin-bottom: 14px;
+}
+
+.research-topic-services .services .desc ul {
+  padding-left: 18px;
+  margin: 0;
+  text-align: left;
+  color: var(--site-text-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.research-topic-services .services .desc li {
+  margin-bottom: 8px;
+}
+
+.research-topic-services .services.color-2 {
+  border-bottom-color: rgba(250, 185, 80, 0.50);
+}
+
+.research-topic-services .services.color-3 {
+  border-bottom-color: rgba(226, 110, 129, 0.50);
+}
+
+.research-topic-services .services.color-4 {
+  border-bottom-color: rgba(108, 80, 112, 0.50);
+}
+
+.research-topic-services .services.color-2 .icon {
+  background: rgba(250, 185, 80, 0.50);
+}
+
+.research-topic-services .services.color-2 .icon:before {
+  border-color: transparent transparent rgba(250, 185, 80, 0.50) transparent;
+}
+
+.research-topic-services .services.color-2 .icon:after {
+  border-color: rgba(250, 185, 80, 0.50) transparent transparent transparent;
+}
+
+.research-topic-services .services.color-3 .icon {
+  background: rgba(226, 110, 129, 0.50);
+}
+
+.research-topic-services .services.color-3 .icon:before {
+  border-color: transparent transparent rgba(226, 110, 129, 0.50) transparent;
+}
+
+.research-topic-services .services.color-3 .icon:after {
+  border-color: rgba(226, 110, 129, 0.50) transparent transparent transparent;
+}
+
+.research-topic-services .services.color-4 .icon {
+  background: rgba(108, 80, 112, 0.50);
+}
+
+.research-topic-services .services.color-4 .icon:before {
+  border-color: transparent transparent rgba(108, 80, 112, 0.50) transparent;
+}
+
+.research-topic-services .services.color-4 .icon:after {
+  border-color: rgba(108, 80, 112, 0.50) transparent transparent transparent;
+}
+
+.research-topic-services .services .icon i {
+  color: #fff;
+}
+
+.research-intro {
+  margin-bottom: 80px;
+}
+
+.research-topic-services {
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 992px) {
+  .research-topic-services .services .desc {
+    min-height: auto;
+  }
+}
+
+/* =======================================================
+ * Final visual overrides: heading font + transparent service icons
+ * These are intentionally placed at the very end of site.css so they
+ * override the original Colorlib rules in css/style.css.
+ * ======================================================= */
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+.colorlib-heading,
+.research-section-title,
+.vision-statement-title,
+.services h3,
+.services .desc h3 {
+  font-family: 'DM Serif Text', serif !important;
+}
+
+.services.color-2 {
+  border-bottom-color: rgba(250, 185, 80, 0.50) !important;
+}
+.services.color-3 {
+  border-bottom-color: rgba(226, 110, 129, 0.50) !important;
+}
+.services.color-4 {
+  border-bottom-color: rgba(108, 80, 112, 0.50) !important;
+}
+
+.services.color-2 .icon {
+  background: rgba(250, 185, 80, 0.50) !important;
+}
+.services.color-2 .icon:before {
+  border-color: transparent transparent rgba(250, 185, 80, 0.50) transparent !important;
+}
+.services.color-2 .icon:after {
+  border-color: rgba(250, 185, 80, 0.50) transparent transparent transparent !important;
+}
+
+.services.color-3 .icon {
+  background: rgba(226, 110, 129, 0.50) !important;
+}
+.services.color-3 .icon:before {
+  border-color: transparent transparent rgba(226, 110, 129, 0.50) transparent !important;
+}
+.services.color-3 .icon:after {
+  border-color: rgba(226, 110, 129, 0.50) transparent transparent transparent !important;
+}
+
+.services.color-4 .icon {
+  background: rgba(108, 80, 112, 0.50) !important;
+}
+.services.color-4 .icon:before {
+  border-color: transparent transparent rgba(108, 80, 112, 0.50) transparent !important;
+}
+.services.color-4 .icon:after {
+  border-color: rgba(108, 80, 112, 0.50) transparent transparent transparent !important;
+}
+
+/* ---------- Direct style.css companion overrides ----------
+ * The primary heading/service edits are now also made directly in css/style.css.
+ * These remain as a safety net for pages that load site.css last.
+ */
+.heading-meta,
+.colorlib-heading,
+.research-section-title,
+.services h3,
+.services .desc h3 {
+  font-family: 'DM Serif Text', serif !important;
+}
+
+
+/* ---------- Icon palette opacity alignment ----------
+ * Match research service icons to the Experience timeline palette at 50% opacity.
+ */
+.services.color-2 .icon,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
+  background: rgba(250, 185, 80, 0.50) !important;
+}
+.services.color-2 .icon:before {
+  border-color: transparent transparent rgba(250, 185, 80, 0.50) transparent !important;
+}
+.services.color-2 .icon:after {
+  border-color: rgba(250, 185, 80, 0.50) transparent transparent transparent !important;
+}
+
+.services.color-3 .icon,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-6 {
+  background: rgba(226, 110, 129, 0.50) !important;
+}
+.services.color-3 .icon:before {
+  border-color: transparent transparent rgba(226, 110, 129, 0.50) transparent !important;
+}
+.services.color-3 .icon:after {
+  border-color: rgba(226, 110, 129, 0.50) transparent transparent transparent !important;
+}
+
+.services.color-4 .icon,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
+  background: rgba(108, 80, 112, 0.50) !important;
+}
+.services.color-4 .icon:before {
+  border-color: transparent transparent rgba(108, 80, 112, 0.50) transparent !important;
+}
+.services.color-4 .icon:after {
+  border-color: rgba(108, 80, 112, 0.50) transparent transparent transparent !important;
 }
