@@ -11,7 +11,7 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- CSS -->
@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="../css/owl.theme.default.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/site.css">
+  <link rel="stylesheet" href="../css/invited-talks.css">
 
   <script src="../js/modernizr-2.6.2.min.js"></script>
   <!--[if lt IE 9]>
@@ -163,25 +164,16 @@
 						</div>
 					</div>
 
-					<h2 class="colorlib-heading animate-box">INVITED TALKS <small id="invited-talks-update-label">(update: Jun 2026)</small></h2>
+					<h2 class="colorlib-heading animate-box invited-talks-heading">INVITED TALKS <small id="invited-talks-update-label">(update: 19 Nov, 2026)</small></h2>
 
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<div class="table-responsive">
-								<table class="table">
-									<thead>
-										<tr>
-											<th>ORGANIZATION</th>
-											<th>TOPIC</th>
-											<th>PLACE</th>
-											<th>DATE</th>
-										</tr>
-									</thead>
-									<tbody id="invited-talks-table-body"></tbody>
-								</table>
-							</div>
-						</div>
-					</div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="invited-talks-list" class="invited-talks-list" role="list" aria-live="polite">
+                                <p class="invited-talks-loading">Loading invited talks...</p>
+                            </div>
+                            <nav id="invited-talks-pagination" class="invited-talks-pagination" aria-label="Invited talks pagination" hidden></nav>
+                        </div>
+                    </div>
 				</div>
 			</section>
 
