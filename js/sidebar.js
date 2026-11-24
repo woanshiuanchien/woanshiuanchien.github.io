@@ -18,7 +18,7 @@
     name: 'Woan-Shiuan Chien',
     title: 'Assistant Professor',
     lab: 'Social Lab, NYCU',
-    labUrl: '#'
+    labUrl: 'https://social.lab.nycu.edu.tw/'
   };
 
   var navItems = [
