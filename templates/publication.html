@@ -1,0 +1,36 @@
+<div class="page-title">
+  <div class="wrap">
+    <h1>Publications</h1>
+    {{profiles}}
+  </div>
+</div>
+<div class="wrap publication-wrap" id="bibliography">
+  <section class="citation-section" id="publication-dissertation">
+    <h2 class="icon-label">{{icon_dissertation}}<span>PhD Dissertation</span></h2>
+    <div class="citation-list degree-listing"></div>
+  </section>
+  <section class="citation-section" id="publication-thesis">
+    <h2 class="icon-label">{{icon_masters_thesis}}<span>MS Thesis</span></h2>
+    <div class="citation-list degree-listing"></div>
+  </section>
+  <section class="citation-section" id="publication-journal">
+    <h2 class="icon-label">{{icon_journal_paper}}<span>International Journal</span></h2>
+    <ol class="citation-list"></ol>
+  </section>
+  <section class="citation-section" id="publication-conference">
+    <h2 class="icon-label">{{icon_conference_paper}}<span>International Conference</span></h2>
+    <aside class="venue-snapshot" aria-labelledby="snapshot-heading" hidden>
+      <div class="snapshot-heading">
+        <h3 id="snapshot-heading">Venue Snapshot</h3>
+        <span class="snapshot-total"></span>
+      </div>
+      <ul class="snapshot-venues"></ul>
+    </aside>
+    <ol class="citation-list"></ol>
+  </section>
+  <section class="citation-section" id="publication-patnts">
+    <h2 class="icon-label">{{icon_patent}}<span>Patents</span></h2>
+    <div class="patent-groups"></div>
+  </section>
+  <noscript><a href="../data/publications.json">Read the full bibliography (JSON)</a></noscript>
+</div>

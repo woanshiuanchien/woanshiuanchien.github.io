@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="title">
+  <title id="title">Overlapping rose petals</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(29 31) scale(1.42)"><path d="M-12 -13 C-4 -12 6 -9 9 1 C11 7 6 13 0 13 C-7 13 -12 9 -12 3 C-12 -3 -10 -7 -12 -13Z" fill="none" stroke="#6C5070" stroke-width="1.7"/><path d="M2 -10 Q9 -15 17 -14 C14 -5 19 5 12 11 Q8 15 3 15" fill="none" stroke="#6C5070" stroke-width="1.7"/></g>
+  </g>
+</svg>

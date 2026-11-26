@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 44" width="210" height="44" role="img" aria-labelledby="title">
+  <title id="title">Footer terminal rule</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 30 H154 C165 30 172 23 178 17" fill="none" stroke="#6C5070" stroke-width="1.3"/><path d="M168 26 Q174 14 185 14 Q180 23 168 26Z" fill="none" stroke="#976666" stroke-width="1.15"/><g transform="translate(198 13) scale(0.71)"><path d="M0 -8 Q1 -1 6 0 Q1 1 0 8 Q-1 1 -6 0 Q-1 -1 0 -8Z" fill="#C6A46C"/></g>
+  </g>
+</svg>

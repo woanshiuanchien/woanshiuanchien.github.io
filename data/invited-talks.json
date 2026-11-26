@@ -1,0 +1,90 @@
+{
+  "invited_talks": [
+    {
+      "organization": "國立陽明交通大學統計所 | Guest Lecturer @ 可信任人工智慧：統計機器學習與最佳化",
+      "topic": "Pending",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/12/09",
+      "url": ""
+    },
+    {
+      "organization": "國立陽明交通大學科管所 | Guest Lecturer @ 科技素養與產業實務創新",
+      "topic": "可信賴AI科技之實務應用 Trustworthy AI in Practice: From Accuracy to Real-World Reliability",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/11/23",
+      "url": ""
+    },
+    {
+      "organization": "TAAI 2026 | Invited Speaker in Young Woman Star Session",
+      "topic": "Beyond Emotion Recognition: Toward Inclusive and Trustworthy Affective AI",
+      "place": "New Taipei, Taiwan",
+      "date": "2026/11/21",
+      "url": "https://taai2026.github.io/zh/program.html#young-woman-star-talk3"
+    },
+    {
+      "organization": "國立陽明交通大學電機系 | 未來導航計畫",
+      "topic": "實驗室探索與生涯規劃：從人的聲音、動作到情緒與健康",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/11/04",
+      "url": ""
+    },
+    {
+      "organization": "國立陽明交通大學電機所 | 論文研討",
+      "topic": "Bridging the Real-World Gap in Health AI: Scale, Context, and Incomplete Information",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/09/23",
+      "url": ""
+    },
+    {
+      "organization": "NTHU | Research Talent Resource Center",
+      "topic": "Preparing for the Faculty Market: Positioning, Storytelling, and Timing",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/07/08",
+      "url": ""
+    },
+    {
+      "organization": "Taiwan-France Workshop (IRP e-Light)",
+      "topic": "AI as the Translation Layer for Heterogeneous Biomedical Sensing",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/06/30",
+      "url": ""
+    },
+    {
+      "organization": "國立清華大學電機系 | 書報討論",
+      "topic": "AI聽懂情緒了嗎?從準確率到公平性的情緒語音技術",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/04/17",
+      "url": ""
+    },
+    {
+      "organization": "國立陽明交通大學電機所 | 論文研討",
+      "topic": "AI時代下情緒語音技術的發展與公平性挑戰",
+      "place": "Hsinchu, Taiwan",
+      "date": "2026/04/08",
+      "url": ""
+    },
+    {
+      "organization": "Tohoku University",
+      "topic": "Multimodal Interaction Modeling: Bias-Aware Emotion Understanding in Interactive Contexts",
+      "place": "Sendai, Japan",
+      "date": "2026/01/16",
+      "url": "https://www.cr-ict.riec.tohoku.ac.jp/archives/941",
+      "link_style": "plain-new-tab"
+    },
+    {
+      "organization": "The Rising Star Women in Engineering Workshop 2025",
+      "topic": "Multimodal Signal Processing for Human-Centered AI",
+      "place": "Taipei, Taiwan",
+      "date": "2025/11/17",
+      "url": ""
+    },
+    {
+      "organization": "Industrial Technology Research Institute (ITRI)",
+      "topic": "Nuvoton Microcontroller Development, Implementation and Design for Smart Image Recognition",
+      "place": "Hsinchu, Taiwan",
+      "date": "2019/08/22",
+      "url": ""
+    }
+  ],
+  "last_updated": "2026-11-19"
+}

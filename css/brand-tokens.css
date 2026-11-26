@@ -1,0 +1,53 @@
+:root {
+  --brand-plum: #6C5070;
+  --brand-gold: #C6A46C;
+  --brand-rose: #E26E81;
+  --brand-dusty-rose: #C09D9B;
+  --brand-rosewood: #976666;
+  --brand-deep-plum: #312434;
+  --brand-soft-blush: #F6E9EC;
+  --brand-soft-champagne: #F4EADB;
+  --brand-ivory: #FAF8F4;
+  --brand-white: #FFFFFF;
+
+  /* Rose is reserved for secondary links, quiet controls and recognition. */
+  --rose-link: color-mix(in srgb,var(--brand-rosewood) 78%,var(--brand-deep-plum));
+  --rose-hover: color-mix(in srgb,var(--brand-rosewood) 50%,var(--brand-deep-plum));
+  --rose-border: var(--brand-dusty-rose);
+  --rose-surface: var(--brand-soft-blush);
+
+  /* Shared reading scale, component rhythm and responsive geometry. */
+  --type-title: clamp(1.875rem, 1.65rem + .65vw, 2.25rem);
+  --type-section: clamp(1.375rem, 1.23rem + .42vw, 1.625rem);
+  --type-subheading: clamp(1.125rem, 1.04rem + .24vw, 1.3rem);
+  --type-card: 1.1rem;
+  --type-body: 1rem;
+  --type-secondary: .875rem;
+  --type-meta: .8125rem;
+  --citation-title-size: var(--type-body);
+  --citation-author-size: calc(var(--citation-title-size) * .9375);
+  --citation-venue-size: calc(var(--citation-title-size) * .875);
+  --citation-badge-size: var(--type-meta);
+  --citation-new-size: .64rem;
+  --space-heading: .7rem;
+  --space-paragraph: .75rem;
+  --space-page: clamp(1.5rem, 2.2vw, 2rem);
+  --space-section: clamp(1.75rem, 2.4vw, 2.25rem);
+  --space-subsection: clamp(1.125rem, 1.7vw, 1.5rem);
+  --space-card: clamp(.875rem, 1.4vw, 1.2rem);
+  --space-grid: clamp(.875rem, 1.2vw, 1.125rem);
+  --space-list: .625rem;
+  --radius-control: .625rem;
+  --radius-panel: .75rem;
+  --rail-size: clamp(18.5rem, calc(19vw + 1.25rem), 19.55rem);
+  --rail-small: 4.5rem;
+  --rail-pad: clamp(1rem, 1.35vw, 1.4rem);
+  --drawer-size: min(20rem, calc(100vw - 1.5rem));
+  --portrait-share: .6;
+  --icon-size: 1.3rem;
+  --toolbar-target: 2rem;
+  --toolbar-gap: .625rem;
+  /* Media queries use literal lengths; site.js reads these matching values. */
+  --breakpoint-drawer: 900px;
+  --breakpoint-rail: 1160px;
+}

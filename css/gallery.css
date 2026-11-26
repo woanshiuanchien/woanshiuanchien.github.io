@@ -1,0 +1,61 @@
+/* Photos remain at their intrinsic proportions. The strip also scrolls without JavaScript. */
+.moments-carousel {
+  --photos-in-view: 2;
+  --photo-gap: clamp(.5rem, 1vw, .85rem);
+  --photo-height: clamp(8rem, 16cqw, 11rem);
+  min-width: 0;
+}
+@container reading (min-width: 62rem) {
+  .moments-carousel { --photos-in-view: 3; }
+}
+@container reading (max-width: 38rem) {
+  .moments-carousel { --photos-in-view: 1; }
+}
+.moments-heading, .moments-controls, .moments-pages {
+  display: flex;
+  align-items: center;
+}
+.moments-heading { justify-content: space-between; gap: .6rem; margin-bottom: .5rem; }
+.moments-heading h2 { margin: 0; }
+.moments-controls { gap: .25rem; }
+.moments-controls button, .moments-pages button {
+  display: grid; place-items: center; border: none; background: transparent;
+  color: var(--plum); padding: 0;
+}
+.moments-controls button { width: 2.35rem; height: 2.35rem; border-radius: var(--radius-control); }
+.moments-controls button:hover, .moments-controls button:focus-visible { background: var(--brand-soft-blush); }
+.moments-controls svg { width: 1.05rem; height: 1.05rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.moments-play .play-shape, .moments-play[data-paused="true"] .pause-shape { display: none; }
+.moments-play[data-paused="true"] .play-shape { display: block; fill: currentColor; }
+.moments-track {
+  display: flex; align-items: flex-start; gap: var(--photo-gap); overflow-x: auto; overflow-y: hidden;
+  overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: thin;
+}
+.moments-carousel[data-ready] .moments-track { scrollbar-width: none; }
+.moments-carousel[data-ready] .moments-track::-webkit-scrollbar { display: none; }
+.moments-track figure { flex: none; scroll-snap-align: start; }
+.moments-track a { display: block; cursor: zoom-in; }
+.moments-track a:focus-visible { outline-offset: -3px; }
+.moments-track img { width: auto; height: var(--photo-height); max-width: none; border-radius:var(--radius-control); }
+.moments-track figcaption {
+  width: 0; min-width: 100%; margin: .35rem 0 0;
+  color: var(--secondary); font-size: .8125rem; line-height: 1.4;
+}
+.moments-pages { justify-content: center; gap: .15rem; margin-top: .05rem; }
+.moments-pages button { min-width: 1.75rem; min-height: 1.75rem; }
+.moments-pages button::before { content: ""; width: .43rem; height: .43rem; border: 1px solid var(--plum); border-radius: 99px; }
+.moments-pages button[aria-current]::before { background: var(--plum); width: 1.05rem; }
+.moments-controls[hidden], .moments-pages[hidden] { display: none; }
+.moments-viewer {
+  max-width: min(93vw, 76rem); max-height: 94dvh; border: 1px solid var(--hairline); border-radius:var(--radius-panel);
+  margin: auto; padding: .8rem; background: var(--ivory); color: var(--ink);
+}
+.moments-viewer::backdrop { background: rgb(49 36 52 / .85); }
+.viewer-inner form { display: flex; justify-content: flex-end; margin: 0 0 .45rem; }
+.viewer-inner button { padding: .4rem .85rem; border: 1px solid var(--hairline); border-radius:var(--radius-control); color: var(--plum); }
+.viewer-inner img { width: auto; height: auto; max-width: 100%; max-height: 75dvh; object-fit: contain; margin-inline: auto; }
+.viewer-inner figcaption { margin: .45rem 0 0; color: var(--ink); }
+@media (pointer: coarse) {
+  .moments-controls button { width: 2.75rem; height: 2.75rem; }
+  .moments-pages button { min-width: 2rem; min-height: 2rem; }
+}

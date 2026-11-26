@@ -1,0 +1,178 @@
+/* Two-column shell. The reading area is sized relative to its own column. */
+:root {
+  --gutter: clamp(1.25rem, 4vw, 4.75rem);
+  --reading-width: 74rem;
+  --rail-paper: #f4eff1;
+  --hairline: #d9cdd4;
+  --rail-outer-size: var(--rail-size);
+}
+html {scroll-padding-top: 1.5rem}
+.portfolio {display:grid;grid-template-columns:var(--rail-size) minmax(0,1fr);align-items:start}
+.reading-pane {min-width:0;container:reading / inline-size}
+.reading-pane .wrap {width:min(calc(100% - 2 * var(--gutter)),var(--reading-width))}
+.identity-rail {
+  position:sticky;top:0;height:100vh;height:100dvh;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-gutter:stable both-edges;
+  background:var(--rail-paper);border-right:1px solid var(--hairline);padding:1rem var(--rail-pad) 1.25rem;
+  z-index:6;font-size:.94rem;
+}
+.mobile-bar,.drawer-backdrop,.drawer-close {display:none}
+.rail-tools,.rail-colophon,.rail-nav a {display:flex;align-items:center}
+.rail-tools {justify-content:space-between;min-height:2.75rem}
+.signature-link,.rail-toggle,.drawer-close,.drawer-toggle {display:grid;place-items:center;min-width:44px;min-height:44px}
+.signature-link {width:44px}
+.rail-toggle,.drawer-close,.drawer-toggle {border:0;color:var(--plum);border-radius:var(--radius-control);padding:.5rem}
+.rail-toggle:hover,.drawer-close:hover,.drawer-toggle:hover {background:var(--brand-soft-blush)}
+.rail-toggle svg,.drawer-toggle svg {width:1.35rem;height:1.35rem}
+.rail-profile {padding:.5rem 0 .85rem;text-align:center}
+.rail-profile>a {display:block;width:calc(var(--rail-outer-size) * var(--portrait-share));max-width:100%;margin:.25rem auto .9rem}
+.rail-photo {width:100%;height:auto;aspect-ratio:1;display:block;border-radius:50%;object-fit:cover;outline:1px solid var(--brand-dusty-rose);outline-offset:3px}
+.rail-wordmark {width:min(100%,14.3rem);margin-inline:auto}
+.rail-alias {font-size:.98rem;letter-spacing:.04em;color:var(--plum);margin:.18rem 0 .65rem}
+.rail-alias span[aria-hidden] {color:var(--brand-rosewood);margin:0 .28rem}
+.rail-position {display:flex;flex-direction:column;align-items:center;margin:0;font-size:.89rem;font-weight:650;line-height:1.46}
+.rail-position br {display:none}
+.rail-position span {display:inline-block;white-space:nowrap;font-size:.875rem;letter-spacing:-.015em;font-weight:400;color:var(--secondary)}
+.rail-nav {display:grid;width:min(100%,11rem);margin-inline:auto;gap:.25rem;border-top:1px solid var(--hairline);padding-block:.6rem 0}
+.rail-nav a {
+  position:relative;gap:.76rem;text-decoration:none;color:var(--ink);line-height:1.35;font-weight:500;
+}
+.rail-nav a {min-height:2.3rem;padding:.32rem .8rem;font-size:1rem;border-radius:var(--radius-control)}
+.rail-nav a[aria-current] {background:#e8dfe6;color:#553d59;font-weight:700}
+.rail-nav a[aria-current]::before {content:"";position:absolute;left:0;top:.6rem;bottom:.6rem;width:3px;background:var(--plum)}
+.rail-nav a:hover {background:#ece4e9;color:#523c55}
+.rail-nav .brand-icon {height:1.28rem;width:1.28rem}
+.rail-nav .nav-lab-logo {object-fit:contain;padding-inline:1px}
+
+.rail-colophon {justify-content:center;text-align:center;gap:.7rem;padding-top:.9rem;color:var(--secondary)}
+.rail-colophon small {font:400 .77rem/1.5 var(--body)}
+.drawer-close {font:400 1.8rem/1 var(--body)}
+.rail-tip {position:fixed;z-index:20;pointer-events:none;border-radius:var(--radius-control);background:var(--heading);color:white;padding:.33rem .65rem;font:500 var(--type-meta)/1.5 var(--body)}
+@media (min-width:901px) {
+  .portfolio[data-compact="true"] {grid-template-columns:var(--rail-small) minmax(0,1fr)}
+  [data-compact="true"] .identity-rail {padding-inline:.55rem;scrollbar-gutter:auto}
+  [data-compact="true"] .rail-tools {flex-direction:column}
+  [data-compact="true"] .rail-toggle svg {transform:scaleX(-1)}
+  [data-compact="true"] .academic-links,[data-compact="true"] .rail-profile,[data-compact="true"] .rail-colophon,[data-compact="true"] .rail-nav a span {display:none}
+  [data-compact="true"] .rail-nav a {justify-content:center;padding:0;min-height:44px}
+
+}
+.about-cover {padding-block:var(--space-page) 0}
+.folio-line {display:flex;align-items:center}
+.folio-line {gap:1.1rem;color:var(--plum);line-height:1.4}
+.folio-line::after {content:"";height:1px;background:var(--hairline);flex:1;order:1}
+.folio-line>span {font-size:.85rem;font-weight:700;letter-spacing:.12em}
+.cover-intro {display:grid;grid-template-columns:1.33fr 1fr;gap:clamp(1.5rem,4vw,4.8rem);align-items:end;padding-block:var(--space-subsection)}
+.cover-intro h1 {font-size:var(--type-title);letter-spacing:-.035em;margin:0;line-height:1.15}
+.cover-intro h1 em {color:var(--plum);font-style:normal}
+.cover-name {margin:.5rem 0 .95rem;color:var(--plum);font-size:1.12rem}
+.cover-name [aria-hidden] {color:var(--brand-rosewood);margin:0 .48rem}
+.cover-name [lang] {letter-spacing:.1em}
+.cover-role,.cover-summary p {margin:0;line-height:1.55}
+.cover-role {font-size:.96rem}
+.cover-summary {border-left:2px solid var(--brand-gold);padding-left:1.22rem}
+.cover-summary p {font-size:var(--type-body)}
+.cover-lab {
+  display: flex;
+  align-items: center;
+  width: min(85%, 17.85rem);
+  min-height: 2.75rem;
+  margin-top: .35rem;
+  transition: opacity 180ms ease;
+}
+.cover-lab img {display: block; width: 100%; height: auto}
+.cover-lab:hover {opacity: .85}
+@media (prefers-reduced-motion: reduce) {
+  .cover-lab {transition: none}
+}
+
+#biography {
+  grid-template-areas: "heading prose" "download prose";
+  row-gap: var(--space-grid);
+}
+#biography h2 {grid-area: heading; align-self: start}
+#biography .prose {grid-area: prose}
+.biography-cv {
+  grid-area: download;
+  place-self: end start;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 2.75rem;
+  padding: .45rem .8rem;
+  border: 1px solid var(--rose-border);
+  border-radius: var(--radius-control);
+  background: var(--rose-surface);
+  color: var(--rose-link);
+  font: 600 var(--type-secondary)/1.4 var(--body);
+  text-decoration: none;
+  transition: background-color 220ms ease, border-color 220ms ease;
+}
+.biography-cv svg {width: 1.25rem; height: 1.25rem; flex: none}
+.biography-cv .cv-arrow {transition: transform 220ms ease}
+.biography-cv:is(:hover, :focus-visible) {
+  color: var(--rose-link);
+  border-color: var(--brand-rosewood);
+  background: color-mix(in srgb, var(--rose-surface) 85%, var(--rose-border));
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .biography-cv:hover .cv-arrow {transform: translateY(4px)}
+}
+@media (prefers-reduced-motion: reduce) {
+  .biography-cv, .biography-cv .cv-arrow {transition: none}
+}
+@container reading (max-width:51rem) {
+  #biography {grid-template-areas: "heading" "prose" "download"}
+  .cover-intro {grid-template-columns:1fr;gap:1rem}
+  .cover-summary {max-width:68ch}
+  .talk {grid-template-columns:1fr}
+  .split-section,.vision,.research-piece,.contact-grid {grid-template-columns:1fr;gap:var(--space-grid)}
+  .filters {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-height:780px) and (min-width:901px) {
+  .rail-profile {padding-block:.6rem .85rem}
+  .rail-nav {padding-block-start:.4rem}
+}
+@media (max-width:900px) {
+  html {scroll-padding-top:4.6rem}
+  .portfolio {display:block}
+  .identity-rail {--rail-outer-size:var(--drawer-size);position:relative;height:auto}
+  .mobile-bar {display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:5;background:var(--ivory);border-bottom:1px solid var(--hairline);padding:.37rem var(--gutter);min-height:3.65rem}
+  .mobile-brand {display:flex;align-items:center;gap:.6rem;font:700 1rem var(--display);color:var(--heading);text-decoration:none}
+  .has-rail .identity-rail {position:fixed;inset:0 auto 0 0;width:var(--drawer-size);height:100vh;height:100dvh;transform:translateX(-101%);visibility:hidden;transition:transform .2s ease,visibility .2s}
+  .has-rail .portfolio[data-open="true"] .identity-rail {transform:translateX(0);visibility:visible}
+  .portfolio[data-open="true"] .drawer-backdrop {display:block;position:fixed;z-index:5;inset:0;border:0;background:rgb(49 36 52 / .38)}
+  .has-rail .rail-toggle {display:none}
+  .rail-nav a {min-height:44px}
+
+  .rail-profile {padding-top:.5rem}
+  body.drawer-open {overflow:hidden}
+}
+@media (max-width:560px) {
+
+  .cover-intro {padding-block:var(--space-subsection)}
+  .cover-role {font-size:.95rem}
+
+  .cover-name {margin:.4rem 0 .7rem}
+  .folio-line {gap:.7rem}
+
+}
+@media (prefers-reduced-motion:reduce) {
+  .has-rail .identity-rail {transition:none}
+}
+
+.portfolio[data-open="true"] .back-to-top {visibility:hidden}
+
+.cover-intro h1 span {white-space:nowrap}
+.cover-headshot {display:none}
+@media (max-width:900px) {
+  .cover-person {display:flex;align-items:center;justify-content:space-between;gap:.7rem}
+  .cover-headshot {display:block;flex:0 0 clamp(3.7rem,13vw,4.8rem)}
+  .cover-headshot img {width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;outline:1px solid var(--brand-dusty-rose);outline-offset:3px}
+}
+@media (max-width:560px) {
+  .cover-intro h1 {text-wrap:initial}
+}
+/* The existing quiet-petal tile sits behind the signature, above the portrait. */
+.rail-tools {background:url(../brand/petals-quiet.svg) center/4.5rem repeat-x}

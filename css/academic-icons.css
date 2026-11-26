@@ -1,0 +1,56 @@
+/* Original sidebar artwork: Font Awesome Free 6.5.0 and the supplied IcoMoon font. */
+@font-face {
+  font-family: "Academic FA Brands";
+  src: url("../fonts/academic-icons/fa-brands-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: block;
+}
+@font-face {
+  font-family: "Academic FA Solid";
+  src: url("../fonts/academic-icons/fa-solid-900.woff2") format("woff2");
+  font-weight: 900;
+  font-display: block;
+}
+@font-face {
+  font-family: "Academic IcoMoon";
+  src: url("../fonts/academic-icons/icomoon.woff") format("woff");
+  font-display: block;
+}
+
+.academic-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: clamp(1.5rem, 2vw, 2rem);
+  gap: .12rem;
+}
+.academic-links a {
+  display: grid;
+  place-items: center;
+  flex: 0 1 2.5rem;
+  min-width: 0;
+  min-height: 2.75rem;
+  color: rgba(0, 0, 0, .6);
+  text-decoration: none;
+  transition: color .15s ease;
+}
+.academic-links a:is(:hover, :focus-visible, :active) {color: #6C5070}
+.academic-links i {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.academic-links .fa-brands {font-family: "Academic FA Brands";font-weight: 400}
+.academic-links .fa-solid {font-family: "Academic FA Solid";font-weight: 900}
+.academic-links :is(.icon-github, .icon-linkedin2) {font-family: "Academic IcoMoon";font-weight: 400}
+.academic-links .fa-google-scholar::before {content: "\e63b"}
+.academic-links .fa-orcid::before {content: "\f8d2"}
+.academic-links .fa-book::before {content: "\f02d"}
+.academic-links .icon-github::before {content: "\eae0"}
+.academic-links .icon-linkedin2::before {content: "\eaf9"}
+@media (prefers-reduced-motion: reduce) {
+  .academic-links a {transition: none}
+}

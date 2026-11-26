@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 26" width="54" height="26" role="img" aria-labelledby="title">
+  <title id="title">Section heading ornament</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 18 H33" fill="none" stroke="#6C5070" stroke-width="1.65"/><path d="M31 18 Q35 9 44 8 Q42 17 31 18Z" fill="none" stroke="#6C5070" stroke-width="1.2"/><circle cx="49" cy="8" r="1.6" fill="#C6A46C" stroke="none" stroke-width="1"/>
+  </g>
+</svg>
